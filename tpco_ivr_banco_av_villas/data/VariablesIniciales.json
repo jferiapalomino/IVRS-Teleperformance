@@ -2,9 +2,9 @@
 	"Configuracion":[{
 		"urlConsultaLogIvr":"http://tpcalldataservice.teleperformance.co/v2/api/",
 		"codigoAplicacion":"FALTA",
-		"nombreAplicacion":"IVR Falabella Peru",
+		"nombreAplicacion":"IVR Banco Av Villas",
 		"pathUrlAudiosEstandar":"/audios_tpco_ivr_cardiff/Audios/Estandar/",
-		"pathUrlAudiosCliente":"/audios_tpco_ivr_cardiff/Audios/Cliente/FalabellaPeru/",
+		"pathUrlAudiosCliente":"/audios_tpco_ivr_cardiff/Audios/Cliente/BancoAVVillas/",
 		"urlArchivosTxt":"/Teleperformance/LogIVRS/",
 		"timeOutConnection":"40000",
 		"timeOutRead":"60000",
