@@ -1,0 +1,23 @@
+{
+	"Configuracion":[{
+		"urlAudiosTPTools":"https://desarrollo02.teleperformance.co/MiddlewareAudiosTPTools/api/",
+		"urlConsultaInfoClient":"https://desarrollo02.teleperformance.co/TPCLCODESARedeban/MiddlewareApi/api/",
+		"pathConsultaInfoClient":"ConsultaInfo/GetInfoByUniqueCod",
+		"urlConsultaLogIvr":"https://desarrollo02.teleperformance.co/COCAPATeleperformance/CallDataService/api/",
+		"codigoAplicacion":"2176",
+		"nombreAplicacion":"IVR Redeban",
+		"pathUrlAudiosEstandar":"/audios_tpco_ivr_redeban/Audios/Estandar/",
+		"pathUrlAudiosCliente":"/audios_tpco_ivr_redeban/Audios/Cliente/",
+		"urlArchivosTxt":"/Teleperformance/LogIVRS/",
+		"timeOutConnection":"40000",
+		"timeOutRead":"60000",
+		"repeticiones":"3",
+  		"intentosSolicitaCodigo":"3",
+ 		"timeoutPromptPac":"5000",
+ 		"timeoutPromptMenu":"5000",
+		"TPToolsTranApplicationId":"1308",
+ 		"vdnClienteDiamante":"61124323050",
+ 		"vdnClienteComun":"61124323056",
+ 		"listaTipoPacGramatica":"Codigo Unico:8-12,Otro Pac:1-20"
+	}]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module category="" descriptorversion="1.0" entrypoint="tpco_ivr_credi_scotia/Start" forcesubdialogcall="false" frameworkversion="07.22.10.04" iconlarge="icons/defaultapplicationlg.gif" iconsmall="icons/defaultapplicationsm.gif" modifyInputs="false" modifyOutputs="false" nature="com.avaya.sce.core.speechnature" outputmultipart="false" paramasnamelist="false" provider="" submitmethod="get" version="1.0.0" webname="tpco_ivr_credi_scotia">
+    <description/>
+    <language name="spanish" root="en-us"/>
+    <dependencies/>
+</module>
