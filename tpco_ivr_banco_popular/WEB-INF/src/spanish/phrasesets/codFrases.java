@@ -32,44 +32,44 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(26);
 		com.avaya.sce.runtime.Phrase phrase;
 
-		// phrase: ANU_LlamadaGrabadaMonitoriada
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ANU_LlamadaGrabadaMonitoriada", "ANU_LlamadaGrabadaMonitoriada.wav", ""); 
-
 		// phrase: ANU_SuCodigoEs
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ANU_SuCodigoEs", "ANU_SuCodigoEs.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_SuCodigoEs", "ANU_SuCodigoEs.wav", ""); 
 
 		// phrase: ANU_Transferencia
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ANU_Transferencia", "ANU_Transferencia.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_Transferencia", "ANU_Transferencia.wav", ""); 
 
 		// phrase: MEN_ConfirmarCodigoUnico
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "MEN_ConfirmarCodigoUnico", "MEN_ConfirmarCodigoUnico.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_ConfirmarCodigoUnico", "MEN_ConfirmarCodigoUnico.wav", ""); 
 
 		// phrase: MEN_Principal
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "MEN_Principal", "MEN_Principal.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_Principal", "MEN_Principal.wav", ""); 
 
 		// phrase: PAC_SolicitaDocumento
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "PAC_SolicitaDocumento", "PAC_SolicitaCodigoUnico.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "PAC_SolicitaDocumento", "PAC_SolicitaCodigoUnico.wav", ""); 
 
 		// phrase: ANU_ValidacionHorario
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ANU_ValidacionHorario", "ANU_ValidacionHorario.wav", ""); 
-
-		// phrase: ANU_Titularidad
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ANU_Titularidad", "ANU_Titularidad.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_ValidacionHorario", "ANU_ValidacionHorario.wav", ""); 
 
 		// phrase: ANU_TratamientoDatos
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ANU_TratamientoDatos", "ANU_TratamientoDatos.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_TratamientoDatos", "ANU_TratamientoDatos.wav", ""); 
 
 		// phrase: MEN_TipoDocumento
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "MEN_TipoDocumento", "MEN_TipoDocumento.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_TipoDocumento", "MEN_TipoDocumento.wav", ""); 
 
 		// phrase: MEN_EstadoSiniestro
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "MEN_EstadoSiniestro", "MEN_EstadoSiniestro.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_EstadoSiniestro", "MEN_EstadoSiniestro.wav", ""); 
 
 		// phrase: MEN_InformacionEcosistema
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "MEN_InformacionEcosistema", "MEN_InformacionEcosistema.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_InformacionEcosistema", "MEN_InformacionEcosistema.wav", ""); 
 
 		// phrase: ANU_Bienvenida
-		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ANU_Bienvenida", "ANU_Bienvenida.wav", ""); 
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_Bienvenida", "ANU_Bienvenida.wav", ""); 
+
+		// phrase: MEN_ServicioExequias
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_ServicioExequias", "MEN_ServicioExequias.wav", ""); 
+
+		// phrase: MEN_ServiciosExequias
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_ServiciosExequias", "MEN_ServiciosExequias.wav", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}

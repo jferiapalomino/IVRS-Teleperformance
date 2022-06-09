@@ -236,7 +236,7 @@ public class codValidaHorario extends com.avaya.sce.runtime.Data {
 
 		} else {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("sbfHorarioAtencion-anuFueraHorario", "Fuera de horario").setDebugId(13));
+			actions.add(new com.avaya.sce.runtime.Next("sbfHorarioAtencion-MenServiciosExequias", "Fuera de horario").setDebugId(13));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

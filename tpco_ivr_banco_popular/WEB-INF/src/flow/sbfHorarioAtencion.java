@@ -42,6 +42,7 @@ public class sbfHorarioAtencion extends com.avaya.sce.runtime.Subflow {
 		exitPoints = new java.util.HashMap<String, String>();
 		exitPoints.put("sbfHorarioAtencion-retEnHorario", "anuBienvenida");
 		exitPoints.put("sbfHorarioAtencion-retFueraHorario", "datTermina");
+		exitPoints.put("sbfHorarioAtencion-retTransferencia", "datTransferencia");
 		return exitPoints;
 	}
 }

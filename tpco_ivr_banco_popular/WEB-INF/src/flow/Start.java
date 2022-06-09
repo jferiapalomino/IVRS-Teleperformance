@@ -73,6 +73,17 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
+			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_CONFIDENCE,
+			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_INPUTMODE,
+			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_INTERPRETATION,
+			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_NOINPUTCOUNT,
+			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_NOMATCHCOUNT,
+			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_UTTERANCE,
+			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_VALUE };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.MEN_SERVICIOS_EXEQUIAS, variableFields, null, session, false, false );
+		session.putVariable(variable);
+
+		variableFields = new String[] {
 			IProjectVariables.RESPONSE_CONSULTA_CLIENTE_FIELD_CELULAR,
 			IProjectVariables.RESPONSE_CONSULTA_CLIENTE_FIELD_CIUDAD,
 			IProjectVariables.RESPONSE_CONSULTA_CLIENTE_FIELD_CODIGO_UNICO,
@@ -138,7 +149,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.VAR_CONFIGURACION_FIELD_HABILITAR_HORARIO_SABADO,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_HORARIO_SABADO,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_HORARIO_SEMANA,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_INTENTOS_INGRESA_OPMENU_PRINCIPAL,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_INTENTOS_SOLICITA_DOCUMENTO,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_LISTA_TIPO_DOCUMENTOS_GRAMATICA,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_NOMBRE_APLICACION,
@@ -160,7 +170,8 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFO_SEGURO,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_PERMANECE_LINEA,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_QUEJA_RECLAMO,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_SERVICIO_ECOSISTEMA };
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_SERVICIO_ECOSISTEMA,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_SERVICIO_EXEQUIAS };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.VAR_CONFIGURACION, variableFields, null, session, false, false );
 		session.putVariable(variable);
 

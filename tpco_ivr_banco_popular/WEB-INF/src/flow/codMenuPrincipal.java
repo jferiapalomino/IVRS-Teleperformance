@@ -150,7 +150,7 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "menPrincipal:noinputcount", com.avaya.sce.runtime.Expression.INT_GREATER_THEN_EQUAL, "1", false).setDebugId(5197)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("datIngresaOpcion", "NoInput").setDebugId(5198));
+			actions.add(new com.avaya.sce.runtime.Next("datValidaIntentosMenuPrincipal", "NoInput").setDebugId(5198));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
@@ -161,7 +161,7 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "menPrincipal:nomatchcount", com.avaya.sce.runtime.Expression.INT_GREATER_THEN_EQUAL, "1", false).setDebugId(5199)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("datIngresaOpcion", "NoMatch").setDebugId(5200));
+			actions.add(new com.avaya.sce.runtime.Next("datValidaIntentosMenuPrincipal", "NoMatch").setDebugId(5200));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

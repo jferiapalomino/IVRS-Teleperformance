@@ -187,22 +187,10 @@ public class codMenuTipoDocumento extends com.avaya.sce.runtime.Data {
 		}
 
 
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition4", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "2", false).setDebugId(4938)).evaluate(mySession)) {
-			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("TipoDocumentoGramatica", "TI", true).setDebugId(5748));
-			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "2").setDebugId(4939));
-			if(evaluateActions(actions, mySession)) {
-				return true;
-			}
-			actions = null;
-
-		}
-
-
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition5", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "3", false).setDebugId(5170)).evaluate(mySession)) {
+		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition4", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "2", false).setDebugId(5170)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
 			actions.add(new com.avaya.sce.runtime.varoperations.Assign("TipoDocumentoGramatica", "CE", true).setDebugId(5749));
-			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "3").setDebugId(5171));
+			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "2").setDebugId(5171));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
@@ -211,10 +199,10 @@ public class codMenuTipoDocumento extends com.avaya.sce.runtime.Data {
 		}
 
 
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition6", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "4", false).setDebugId(5172)).evaluate(mySession)) {
+		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition5", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "3", false).setDebugId(5172)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
 			actions.add(new com.avaya.sce.runtime.varoperations.Assign("TipoDocumentoGramatica", "PA", true).setDebugId(5750));
-			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "4").setDebugId(5173));
+			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "3").setDebugId(5173));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
@@ -223,43 +211,7 @@ public class codMenuTipoDocumento extends com.avaya.sce.runtime.Data {
 		}
 
 
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition7", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "5", false).setDebugId(5174)).evaluate(mySession)) {
-			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("TipoDocumentoGramatica", "NIT", true).setDebugId(5751));
-			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "5").setDebugId(5175));
-			if(evaluateActions(actions, mySession)) {
-				return true;
-			}
-			actions = null;
-
-		}
-
-
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition8", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "6", false).setDebugId(5176)).evaluate(mySession)) {
-			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("TipoDocumentoGramatica", "PE", true).setDebugId(5752));
-			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "6").setDebugId(5177));
-			if(evaluateActions(actions, mySession)) {
-				return true;
-			}
-			actions = null;
-
-		}
-
-
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition9", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "7", false).setDebugId(5735)).evaluate(mySession)) {
-			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("TipoDocumentoGramatica", "SC", true).setDebugId(5753));
-			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "7").setDebugId(5736));
-			if(evaluateActions(actions, mySession)) {
-				return true;
-			}
-			actions = null;
-
-		}
-
-
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition10", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "9", false).setDebugId(5737)).evaluate(mySession)) {
+		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition6", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "9", false).setDebugId(5737)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
 			actions.add(new com.avaya.sce.runtime.Next("datRepetirMenuTipoDocumento", "9").setDebugId(5738));
 			if(evaluateActions(actions, mySession)) {

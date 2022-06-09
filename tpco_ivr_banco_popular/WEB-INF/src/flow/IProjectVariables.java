@@ -35,6 +35,7 @@ public interface IProjectVariables {
 	public static final String MEN_ESTADO_SINIESTRO = "menEstadoSiniestro";
 	public static final String VAR_SYSTEM_ERRORS = "varSystemErrors";
 	public static final String PATH = "path";
+	public static final String MEN_SERVICIOS_EXEQUIAS = "MenServiciosExequias";
 	public static final String RESPONSE_CONSULTA_CLIENTE = "responseConsultaCliente";
 	public static final String REQUEST_UPDATE_CALL_DATA = "requestUpdateCallData";
 	public static final String MEN_PRINCIPAL = "menPrincipal";
@@ -97,6 +98,13 @@ public interface IProjectVariables {
 	public static final String VAR_SYSTEM_ERRORS_FIELD_EVENT_MESSAGE = "eventMessage";
 	public static final String VAR_SYSTEM_ERRORS_FIELD_EVENT_NAME = "eventName";
 	public static final String VAR_SYSTEM_ERRORS_FIELD_TIPO_FINALIZACION = "tipoFinalizacion";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_CONFIDENCE = "confidence";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_INPUTMODE = "inputmode";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_INTERPRETATION = "interpretation";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_NOINPUTCOUNT = "noinputcount";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_NOMATCHCOUNT = "nomatchcount";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_UTTERANCE = "utterance";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_VALUE = "value";
 	public static final String RESPONSE_CONSULTA_CLIENTE_FIELD_CELULAR = "Celular";
 	public static final String RESPONSE_CONSULTA_CLIENTE_FIELD_CIUDAD = "Ciudad";
 	public static final String RESPONSE_CONSULTA_CLIENTE_FIELD_CODIGO_UNICO = "CodigoUnico";
@@ -147,7 +155,6 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_HABILITAR_HORARIO_SABADO = "habilitarHorarioSabado";
 	public static final String VAR_CONFIGURACION_FIELD_HORARIO_SABADO = "horarioSabado";
 	public static final String VAR_CONFIGURACION_FIELD_HORARIO_SEMANA = "horarioSemana";
-	public static final String VAR_CONFIGURACION_FIELD_INTENTOS_INGRESA_OPMENU_PRINCIPAL = "intentosIngresaOPMenuPrincipal";
 	public static final String VAR_CONFIGURACION_FIELD_INTENTOS_SOLICITA_DOCUMENTO = "intentosSolicitaDocumento";
 	public static final String VAR_CONFIGURACION_FIELD_LISTA_TIPO_DOCUMENTOS_GRAMATICA = "listaTipoDocumentosGramatica";
 	public static final String VAR_CONFIGURACION_FIELD_NOMBRE_APLICACION = "nombreAplicacion";
@@ -170,6 +177,7 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_VDN_PERMANECE_LINEA = "vdnPermaneceLinea";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_QUEJA_RECLAMO = "vdnQuejaReclamo";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_SERVICIO_ECOSISTEMA = "vdnServicioEcosistema";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_SERVICIO_EXEQUIAS = "vdnServicioExequias";
 	public static final String PAC_DOCUMENTO_FIELD_CONFIDENCE = "confidence";
 	public static final String PAC_DOCUMENTO_FIELD_INPUTMODE = "inputmode";
 	public static final String PAC_DOCUMENTO_FIELD_INTERPRETATION = "interpretation";

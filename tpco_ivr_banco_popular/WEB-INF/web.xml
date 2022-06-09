@@ -74,6 +74,11 @@ Copyright 2004-2011 Avaya Inc.
         <param-value>http://10.151.230.209:7080/audios_tpco_ivr_redeban/Audios/Estandar/</param-value>
     </context-param>
     
+    
+    <context-param>
+        <param-name>spanish.phraseset.codFrases.urlbase</param-name>
+        <param-value>http://10.151.230.209:7080/audios_tpco_ivr_cardiff/Audios/Cliente/BancoPopular/</param-value>
+    </context-param>
     <servlet id="avayadefaultdisconnecthandler-servlet">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <servlet-class>com.avaya.sce.runtime.DefaultDisconnect</servlet-class>
@@ -748,67 +753,28 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_1">
-        <servlet-name>sbfAudioTexto-Begin</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.Begin</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_4">
-        <servlet-name>sbfAudioTexto-svlRecuperarAudio</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.svlRecuperarAudio</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_8">
-        <servlet-name>sbfAudioTexto-datValidaURLAudio</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.datValidaURLAudio</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_141">
-        <servlet-name>sbfAudioTexto-retFin</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.retFin</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_45">
-        <servlet-name>sbfAudioTexto-datValidaInterrumpirAudio</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.datValidaInterrumpirAudio</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_49">
-        <servlet-name>sbfAudioTexto-AnuncioAudiotextoObligatorio</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.AnuncioAudiotextoObligatorio</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_113">
-        <servlet-name>sbfAudioTexto-cod_trace_log_badfetch</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.cod_trace_log_badfetch</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_82">
-        <servlet-name>sbfAudioTexto-cod_trace_log_badfetch_http_404</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.cod_trace_log_badfetch_http_404</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_20">
-        <servlet-name>sbfAudioTexto-AnuncioAudiotexto</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.AnuncioAudiotexto</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_120">
-        <servlet-name>sbfAudioTexto-cod_trace_log_unsupported_format</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.cod_trace_log_unsupported_format</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_27">
-        <servlet-name>sbfAudioTexto-cod_set_EmptyUrlAudio</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.cod_set_EmptyUrlAudio</servlet-class>
-    </servlet>
     
     
     
     
-    <servlet id="SAGE-callflow-servlet_sbfAudioTexto_159">
-        <servlet-name>sbfAudioTexto-datValidaTPTools</servlet-name>
-        <servlet-class>flow.subflow.sbfAudioTexto.datValidaTPTools</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     <servlet id="SAGE-callflow-servlet_main_5717">
         <servlet-name>svlReportVdnTransfer</servlet-name>
         <servlet-class>flow.svlReportVdnTransfer</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_sbfHorarioAtencion_16">
-        <servlet-name>sbfHorarioAtencion-anuFueraHorario</servlet-name>
-        <servlet-class>flow.subflow.sbfHorarioAtencion.anuFueraHorario</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_sbfHorarioAtencion_1">
         <servlet-name>sbfHorarioAtencion-Begin</servlet-name>
         <servlet-class>flow.subflow.sbfHorarioAtencion.Begin</servlet-class>
@@ -833,10 +799,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>anuBienvenida</servlet-name>
         <servlet-class>flow.anuBienvenida</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_5773">
-        <servlet-name>anuTitularidad</servlet-name>
-        <servlet-class>flow.anuTitularidad</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_5778">
         <servlet-name>anuTratamientoDatos</servlet-name>
         <servlet-class>flow.anuTratamientoDatos</servlet-class>
@@ -873,13 +836,23 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>datValidaIntentosMenuInformacionEcosistema</servlet-name>
         <servlet-class>flow.datValidaIntentosMenuInformacionEcosistema</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_5914">
-        <servlet-name>datIngresaOpcion</servlet-name>
-        <servlet-class>flow.datIngresaOpcion</servlet-class>
+    
+    
+    <servlet id="SAGE-callflow-servlet_sbfHorarioAtencion_32">
+        <servlet-name>sbfHorarioAtencion-MenServiciosExequias</servlet-name>
+        <servlet-class>flow.subflow.sbfHorarioAtencion.MenServiciosExequias</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_5925">
-        <servlet-name>datRepiteMenu</servlet-name>
-        <servlet-class>flow.datRepiteMenu</servlet-class>
+    <servlet id="SAGE-callflow-servlet_sbfHorarioAtencion_56">
+        <servlet-name>sbfHorarioAtencion-codMenuServiciosExequias</servlet-name>
+        <servlet-class>flow.subflow.sbfHorarioAtencion.codMenuServiciosExequias</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_sbfHorarioAtencion_87">
+        <servlet-name>sbfHorarioAtencion-retTransferencia</servlet-name>
+        <servlet-class>flow.subflow.sbfHorarioAtencion.retTransferencia</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_sbfHorarioAtencion_74">
+        <servlet-name>sbfHorarioAtencion-datValidaIntentosMenServiciosExequias</servlet-name>
+        <servlet-class>flow.subflow.sbfHorarioAtencion.datValidaIntentosMenServiciosExequias</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -1525,67 +1498,28 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_1">
-        <servlet-name>sbfAudioTexto-Begin</servlet-name>
-        <url-pattern>/sbfAudioTexto-Begin</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_4">
-        <servlet-name>sbfAudioTexto-svlRecuperarAudio</servlet-name>
-        <url-pattern>/sbfAudioTexto-svlRecuperarAudio</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_8">
-        <servlet-name>sbfAudioTexto-datValidaURLAudio</servlet-name>
-        <url-pattern>/sbfAudioTexto-datValidaURLAudio</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_141">
-        <servlet-name>sbfAudioTexto-retFin</servlet-name>
-        <url-pattern>/sbfAudioTexto-retFin</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_45">
-        <servlet-name>sbfAudioTexto-datValidaInterrumpirAudio</servlet-name>
-        <url-pattern>/sbfAudioTexto-datValidaInterrumpirAudio</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_49">
-        <servlet-name>sbfAudioTexto-AnuncioAudiotextoObligatorio</servlet-name>
-        <url-pattern>/sbfAudioTexto-AnuncioAudiotextoObligatorio</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_113">
-        <servlet-name>sbfAudioTexto-cod_trace_log_badfetch</servlet-name>
-        <url-pattern>/sbfAudioTexto-cod_trace_log_badfetch</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_82">
-        <servlet-name>sbfAudioTexto-cod_trace_log_badfetch_http_404</servlet-name>
-        <url-pattern>/sbfAudioTexto-cod_trace_log_badfetch_http_404</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_20">
-        <servlet-name>sbfAudioTexto-AnuncioAudiotexto</servlet-name>
-        <url-pattern>/sbfAudioTexto-AnuncioAudiotexto</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_120">
-        <servlet-name>sbfAudioTexto-cod_trace_log_unsupported_format</servlet-name>
-        <url-pattern>/sbfAudioTexto-cod_trace_log_unsupported_format</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_27">
-        <servlet-name>sbfAudioTexto-cod_set_EmptyUrlAudio</servlet-name>
-        <url-pattern>/sbfAudioTexto-cod_set_EmptyUrlAudio</url-pattern>
-    </servlet-mapping>
     
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfAudioTexto_159">
-        <servlet-name>sbfAudioTexto-datValidaTPTools</servlet-name>
-        <url-pattern>/sbfAudioTexto-datValidaTPTools</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     <servlet-mapping id="SAGE-callflow-servletmapping_main_5717">
         <servlet-name>svlReportVdnTransfer</servlet-name>
         <url-pattern>/svlReportVdnTransfer</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_sbfHorarioAtencion_16">
-        <servlet-name>sbfHorarioAtencion-anuFueraHorario</servlet-name>
-        <url-pattern>/sbfHorarioAtencion-anuFueraHorario</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_sbfHorarioAtencion_1">
         <servlet-name>sbfHorarioAtencion-Begin</servlet-name>
         <url-pattern>/sbfHorarioAtencion-Begin</url-pattern>
@@ -1610,10 +1544,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>anuBienvenida</servlet-name>
         <url-pattern>/anuBienvenida</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5773">
-        <servlet-name>anuTitularidad</servlet-name>
-        <url-pattern>/anuTitularidad</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_5778">
         <servlet-name>anuTratamientoDatos</servlet-name>
         <url-pattern>/anuTratamientoDatos</url-pattern>
@@ -1650,14 +1581,24 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>datValidaIntentosMenuInformacionEcosistema</servlet-name>
         <url-pattern>/datValidaIntentosMenuInformacionEcosistema</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5914">
-        <servlet-name>datIngresaOpcion</servlet-name>
-        <url-pattern>/datIngresaOpcion</url-pattern>
+    <servlet-mapping id="SAGE-callflow-servletmapping_sbfHorarioAtencion_32">
+        <servlet-name>sbfHorarioAtencion-MenServiciosExequias</servlet-name>
+        <url-pattern>/sbfHorarioAtencion-MenServiciosExequias</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5925">
-        <servlet-name>datRepiteMenu</servlet-name>
-        <url-pattern>/datRepiteMenu</url-pattern>
+    <servlet-mapping id="SAGE-callflow-servletmapping_sbfHorarioAtencion_56">
+        <servlet-name>sbfHorarioAtencion-codMenuServiciosExequias</servlet-name>
+        <url-pattern>/sbfHorarioAtencion-codMenuServiciosExequias</url-pattern>
     </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_sbfHorarioAtencion_87">
+        <servlet-name>sbfHorarioAtencion-retTransferencia</servlet-name>
+        <url-pattern>/sbfHorarioAtencion-retTransferencia</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_sbfHorarioAtencion_74">
+        <servlet-name>sbfHorarioAtencion-datValidaIntentosMenServiciosExequias</servlet-name>
+        <url-pattern>/sbfHorarioAtencion-datValidaIntentosMenServiciosExequias</url-pattern>
+    </servlet-mapping>
+    
+    
     
     
     

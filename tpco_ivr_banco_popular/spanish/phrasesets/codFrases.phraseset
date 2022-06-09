@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<phraseset audiolocation="internal" filename="codFrases" version="1.0">
-    <phrase version="1.0">
-        <displayname>ANU_LlamadaGrabadaMonitoriada</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>ANU_LlamadaGrabadaMonitoriada.wav</audiofile>
-    </phrase>
+<phraseset audiolocation="external" filename="codFrases" version="1.0">
     <phrase version="1.0">
         <displayname>ANU_SuCodigoEs</displayname>
         <talent/>
@@ -64,15 +55,6 @@
         <audiofile>ANU_ValidacionHorario.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>ANU_Titularidad</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>ANU_Titularidad.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
         <displayname>ANU_TratamientoDatos</displayname>
         <talent/>
         <phrasetext/>
@@ -116,5 +98,23 @@
         <searchkeywords/>
         <comments/>
         <audiofile>ANU_Bienvenida.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_ServicioExequias</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_ServicioExequias.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_ServiciosExequias</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_ServiciosExequias.wav</audiofile>
     </phrase>
 </phraseset>
