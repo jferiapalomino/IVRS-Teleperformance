@@ -35,6 +35,7 @@ public interface IProjectVariables {
 	public static final String MEN_ESTADO_SINIESTRO = "menEstadoSiniestro";
 	public static final String VAR_SYSTEM_ERRORS = "varSystemErrors";
 	public static final String PATH = "path";
+	public static final String MEN_SERVICIOS_EXEQUIAS = "MenServiciosExequias";
 	public static final String RESPONSE_CONSULTA_CLIENTE = "responseConsultaCliente";
 	public static final String REQUEST_UPDATE_CALL_DATA = "requestUpdateCallData";
 	public static final String MEN_PRINCIPAL = "menPrincipal";
@@ -97,6 +98,13 @@ public interface IProjectVariables {
 	public static final String VAR_SYSTEM_ERRORS_FIELD_EVENT_MESSAGE = "eventMessage";
 	public static final String VAR_SYSTEM_ERRORS_FIELD_EVENT_NAME = "eventName";
 	public static final String VAR_SYSTEM_ERRORS_FIELD_TIPO_FINALIZACION = "tipoFinalizacion";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_CONFIDENCE = "confidence";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_INPUTMODE = "inputmode";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_INTERPRETATION = "interpretation";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_NOINPUTCOUNT = "noinputcount";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_NOMATCHCOUNT = "nomatchcount";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_UTTERANCE = "utterance";
+	public static final String MEN_SERVICIOS_EXEQUIAS_FIELD_VALUE = "value";
 	public static final String RESPONSE_CONSULTA_CLIENTE_FIELD_CELULAR = "Celular";
 	public static final String RESPONSE_CONSULTA_CLIENTE_FIELD_CIUDAD = "Ciudad";
 	public static final String RESPONSE_CONSULTA_CLIENTE_FIELD_CODIGO_UNICO = "CodigoUnico";
@@ -166,12 +174,14 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_VDN_ACTIVIDAD_ECONOMICA = "vdnActividadEconomica";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_ASISTENCIA_HOGAR = "vdnAsistenciaHogar";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_CANCELACION_SEGURO = "vdnCancelacionSeguro";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_EXCEDE_INTENTOS_MENU_TP = "vdnExcedeIntentosMenuTP";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_GASTOS_FUNERARIOS = "vdnGastosFunerarios";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_INFO_SEGURO = "vdnInfoSeguro";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_OTRA_ASISTENCIA = "vdnOtraAsistencia";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_PERMANECE_LINEA = "vdnPermaneceLinea";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_QUEJA_RECLAMO = "vdnQuejaReclamo";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_SERVICIO_ECOSISTEMA = "vdnServicioEcosistema";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_SERVICIO_EXEQUIAS = "vdnServicioExequias";
 	public static final String PAC_DOCUMENTO_FIELD_CONFIDENCE = "confidence";
 	public static final String PAC_DOCUMENTO_FIELD_INPUTMODE = "inputmode";
 	public static final String PAC_DOCUMENTO_FIELD_INTERPRETATION = "interpretation";

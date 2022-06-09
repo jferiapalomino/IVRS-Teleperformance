@@ -53,9 +53,6 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 		// phrase: ANU_ValidacionHorario
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_ValidacionHorario", "ANU_ValidacionHorario.wav", ""); 
 
-		// phrase: ANU_Titularidad
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_Titularidad", "ANU_Titularidad.wav", ""); 
-
 		// phrase: ANU_TratamientoDatos
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_TratamientoDatos", "ANU_TratamientoDatos.wav", ""); 
 
@@ -70,6 +67,9 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 
 		// phrase: ANU_Bienvenida
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_Bienvenida", "ANU_Bienvenida.wav", ""); 
+
+		// phrase: MEN_ServiciosExequias
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_ServiciosExequias", "MEN_ServiciosExequias.wav", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}

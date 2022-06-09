@@ -64,15 +64,6 @@
         <audiofile>ANU_ValidacionHorario.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>ANU_Titularidad</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>ANU_Titularidad.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
         <displayname>ANU_TratamientoDatos</displayname>
         <talent/>
         <phrasetext/>
@@ -116,5 +107,14 @@
         <searchkeywords/>
         <comments/>
         <audiofile>ANU_Bienvenida.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_ServiciosExequias</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_ServiciosExequias.wav</audiofile>
     </phrase>
 </phraseset>
