@@ -75,7 +75,7 @@ Copyright 2004-2011 Avaya Inc.
     </context-param>
     <context-param>
         <param-name>spanish.phraseset.codFrases.urlbase</param-name>
-        <param-value>http://10.151.230.209:7080/audios_tpco_ivr_cardiff/Audios/Cliente/FalabellaPeru/</param-value>
+        <param-value>http://10.151.230.209:7080/audios_tpco_ivr_cardiff/Audios/Cliente/BancoBBVA/</param-value>
     </context-param>
     <servlet id="avayadefaultdisconnecthandler-servlet">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
