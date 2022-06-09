@@ -1082,7 +1082,6 @@
     <variable factoryID="" name="varConfiguracion:habilitarHorarioSabado" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:horarioSabado" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:horarioSemana" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:intentosIngresaOPMenuPrincipal" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:intentosSolicitaDocumento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:listaTipoDocumentosGramatica" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:nombreAplicacion" owner="" type="" value="" version="1.0"/>
@@ -1100,7 +1099,7 @@
     <variable factoryID="" name="varConfiguracion:urlConsultaLogIvr" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnActividadEconomica" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnAsistenciaHogar" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnCancelacionSeguro" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnDesactivacionSeguro" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnExcedeIntentosMenuTP" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnGastosFunerarios" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnInfoSeguro" owner="" type="" value="" version="1.0"/>

@@ -820,14 +820,8 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>datValidaIntentosMenuInformacionEcosistema</servlet-name>
         <servlet-class>flow.datValidaIntentosMenuInformacionEcosistema</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_5914">
-        <servlet-name>datIngresaOpcion</servlet-name>
-        <servlet-class>flow.datIngresaOpcion</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_5925">
-        <servlet-name>datRepiteMenu</servlet-name>
-        <servlet-class>flow.datRepiteMenu</servlet-class>
-    </servlet>
+    
+    
     
     <servlet id="SAGE-callflow-servlet_sbfHorarioAtencion_1">
         <servlet-name>sbfHorarioAtencion-Begin</servlet-name>
@@ -1577,14 +1571,8 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>datValidaIntentosMenuInformacionEcosistema</servlet-name>
         <url-pattern>/datValidaIntentosMenuInformacionEcosistema</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5914">
-        <servlet-name>datIngresaOpcion</servlet-name>
-        <url-pattern>/datIngresaOpcion</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5925">
-        <servlet-name>datRepiteMenu</servlet-name>
-        <url-pattern>/datRepiteMenu</url-pattern>
-    </servlet-mapping>
+    
+    
     
     <servlet-mapping id="SAGE-callflow-servletmapping_sbfHorarioAtencion_1">
         <servlet-name>sbfHorarioAtencion-Begin</servlet-name>
