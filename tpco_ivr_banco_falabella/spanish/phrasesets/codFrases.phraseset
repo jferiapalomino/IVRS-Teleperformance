@@ -100,12 +100,12 @@
         <audiofile>ANU_ValidacionHorario.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>ANU_Bienvenida</displayname>
+        <displayname>MEN_TipoDocumento</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>ANU_Bienvenida.wav</audiofile>
+        <audiofile>MEN_TipoDocumento.wav</audiofile>
     </phrase>
 </phraseset>

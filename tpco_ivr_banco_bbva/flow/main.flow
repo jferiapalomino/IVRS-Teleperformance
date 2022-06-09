@@ -1027,7 +1027,7 @@
                             <ItemProperties>
                                 <Property name="ActivateDTMF" value="2"/>
                                 <Property name="LinkedNodeID" value="4929"/>
-                                <Property name="Name" value="Carnet Extranjera"/>
+                                <Property name="Name" value="Carnet Extranjeria"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
