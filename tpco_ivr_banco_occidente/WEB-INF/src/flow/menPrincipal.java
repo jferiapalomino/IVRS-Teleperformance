@@ -144,7 +144,7 @@ public class menPrincipal extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("Solicitar asistencia o información de su ecosistema", "5", true, "exact", "codMenuPrincipal", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("Ecosistema de servicio", "5", true, "exact", "codMenuPrincipal", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice

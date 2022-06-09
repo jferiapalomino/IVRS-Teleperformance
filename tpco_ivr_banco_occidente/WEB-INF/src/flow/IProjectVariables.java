@@ -138,7 +138,6 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_HABILITAR_HORARIO_SABADO = "habilitarHorarioSabado";
 	public static final String VAR_CONFIGURACION_FIELD_HORARIO_SABADO = "horarioSabado";
 	public static final String VAR_CONFIGURACION_FIELD_HORARIO_SEMANA = "horarioSemana";
-	public static final String VAR_CONFIGURACION_FIELD_INTENTOS_INGRESA_OPMENU_PRINCIPAL = "intentosIngresaOPMenuPrincipal";
 	public static final String VAR_CONFIGURACION_FIELD_INTENTOS_SOLICITA_DOCUMENTO = "intentosSolicitaDocumento";
 	public static final String VAR_CONFIGURACION_FIELD_LISTA_TIPO_DOCUMENTOS_GRAMATICA = "listaTipoDocumentosGramatica";
 	public static final String VAR_CONFIGURACION_FIELD_NOMBRE_APLICACION = "nombreAplicacion";
@@ -159,6 +158,7 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_VDN_CANCELACION_SEGURO = "vdnCancelacionSeguro";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_CONTENIDO_HOGAR = "vdnContenidoHogar";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_ESTADO_SINIESTRO = "vdnEstadoSiniestro";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_EXCEDE_INTENTOS_MENU_TP = "vdnExcedeIntentosMenuTP";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_INFO_ECOSISTEMA = "vdnInfoEcosistema";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_INFO_SEGURO = "vdnInfoSeguro";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_QUEJA_RECLAMO = "vdnQuejaReclamo";

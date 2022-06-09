@@ -76,8 +76,8 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 						mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
 						break;
 					case "5":
-						mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("5.  Para solicitar una asistencia o si requiere información de su ecosistema de servicio");
-						Utils.agregarOpcion("Opcion5", "Opción 5 -  Para solicitar una asistencia o si requiere información de su ecosistema de servicio", mySession, "", "", "", "5", "9", "5");
+						mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("5.  Para ecosistemas de servicios");
+						Utils.agregarOpcion("Opcion5", "Opción 5 -  Para ecosistemas de servicios", mySession, "", "", "", "5", "9", "5");
 						mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
 						break;
 					case "6":
@@ -160,7 +160,7 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "menPrincipal:noinputcount", com.avaya.sce.runtime.Expression.INT_GREATER_THEN_EQUAL, "1", false).setDebugId(5197)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("datIngresaOpcion", "NoInput").setDebugId(5198));
+			actions.add(new com.avaya.sce.runtime.Next("datValidaIntentosMenuPrincipal", "NoInput").setDebugId(5198));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
@@ -171,7 +171,7 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "menPrincipal:nomatchcount", com.avaya.sce.runtime.Expression.INT_GREATER_THEN_EQUAL, "1", false).setDebugId(5199)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("datIngresaOpcion", "NoMatch").setDebugId(5200));
+			actions.add(new com.avaya.sce.runtime.Next("datValidaIntentosMenuPrincipal", "NoMatch").setDebugId(5200));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
