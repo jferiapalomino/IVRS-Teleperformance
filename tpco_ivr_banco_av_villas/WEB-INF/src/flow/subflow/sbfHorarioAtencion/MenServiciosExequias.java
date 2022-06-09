@@ -86,13 +86,13 @@ public class MenServiciosExequias extends com.avaya.sce.runtime.Menu {
 		// Item has no prompts associated
 		eventPromptNames = new java.util.ArrayList();
 
-		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOINPUT, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("sbfHorarioAtencion-codValidaHorario", 0, true, ""));
+		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOINPUT, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("sbfHorarioAtencion-codMenuServiciosExequias", 0, true, ""));
 		list.add(event);
 
 		// Item has no prompts associated
 		eventPromptNames = new java.util.ArrayList();
 
-		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOMATCH, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("sbfHorarioAtencion-codValidaHorario", 0, true, ""));
+		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOMATCH, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("sbfHorarioAtencion-codMenuServiciosExequias", 0, true, ""));
 		list.add(event);
 		return(list);
 	}
@@ -116,7 +116,7 @@ public class MenServiciosExequias extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("Servicio Exequias", "1", true, "exact", "sbfHorarioAtencion-codValidaHorario", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("Servicio Exequias", "1", true, "exact", "sbfHorarioAtencion-codMenuServiciosExequias", grammarInfo, true);
 		list.add(choice);
 
 		return(list);
