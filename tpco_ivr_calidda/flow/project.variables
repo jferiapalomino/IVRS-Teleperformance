@@ -930,6 +930,7 @@
     <variable factoryID="" name="varConfiguracion:urlConsultaInfoClient" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:urlConsultaLogIvr" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnDesactivacionSeguro" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnExcedeIntentosMenuTP" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnInfoProteccion" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnRegistroReclamo" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vndEstadoSiniestro" owner="" type="" value="" version="1.0"/>

@@ -29,7 +29,7 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 		//{{START:PHRASESET:STATIC
 
 		// Create the phrase map, then populate with phrases
-		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(24);
+		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(26);
 		com.avaya.sce.runtime.Phrase phrase;
 
 		// phrase: ANU_ComercioAfiliadoRedeban
@@ -67,6 +67,9 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 
 		// phrase: ANU_Bienvenida
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_Bienvenida", "ANU_Bienvenida.wav", ""); 
+
+		// phrase: MEN_TipoDocumento
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_TipoDocumento", "MEN_TipoDocumento.wav", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}
