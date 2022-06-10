@@ -108,4 +108,13 @@
         <comments/>
         <audiofile>ANU_Bienvenida.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>PAC_SolicitaDocumento</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>PAC_SolicitaDocumento.wav</audiofile>
+    </phrase>
 </phraseset>

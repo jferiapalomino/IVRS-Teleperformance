@@ -109,56 +109,28 @@ public class menTipoDocumento extends com.avaya.sce.runtime.Menu {
 		java.util.List list = null;
 		com.avaya.sce.runtime.Choice choice = null;
 		java.util.Collection grammarInfo = null;
-		list = new java.util.ArrayList(8);
+		list = new java.util.ArrayList(4);
 		String ___tempGrammarName = null;
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("Cedula Ciudadania", "1", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("DNI", "1", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("Tarjeta Identidad", "2", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("Cedula Extranjeria", "2", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("Cedula Extranjera", "3", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
-		list.add(choice);
-
-		// build the list of grammar information objects for the choice
-		grammarInfo = new java.util.ArrayList();
-
-
-		choice = new com.avaya.sce.runtime.Choice("Pasaporte", "4", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
-		list.add(choice);
-
-		// build the list of grammar information objects for the choice
-		grammarInfo = new java.util.ArrayList();
-
-
-		choice = new com.avaya.sce.runtime.Choice("NIT", "5", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
-		list.add(choice);
-
-		// build the list of grammar information objects for the choice
-		grammarInfo = new java.util.ArrayList();
-
-
-		choice = new com.avaya.sce.runtime.Choice("Permiso Especial", "6", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
-		list.add(choice);
-
-		// build the list of grammar information objects for the choice
-		grammarInfo = new java.util.ArrayList();
-
-
-		choice = new com.avaya.sce.runtime.Choice("Salvo Conducto", "7", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("Pasaporte", "3", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
