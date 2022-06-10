@@ -2,9 +2,9 @@
 	"Configuracion":[{
 		"urlConsultaLogIvr":"http://tpcalldataservice.teleperformance.co/v2/api/",
 		"codigoAplicacion":"FALTA",
-		"nombreAplicacion":"IVR Falabella Peru",
+		"nombreAplicacion":"IVR Cencosud",
 		"pathUrlAudiosEstandar":"/audios_tpco_ivr_cardiff/Audios/Estandar/",
-		"pathUrlAudiosCliente":"/audios_tpco_ivr_cardiff/Audios/Cliente/FalabellaPeru/",
+		"pathUrlAudiosCliente":"/audios_tpco_ivr_cardiff/Audios/Cliente/Cencosud/",
 		"urlArchivosTxt":"/Teleperformance/LogIVRS/",
 		"timeOutConnection":"40000",
 		"timeOutRead":"60000",
@@ -16,10 +16,11 @@
  		"vdnInfoProteccion":"0",
  		"vdnRegistroReclamo":"0",
  		"vndEstadoSiniestro":"0",
+ 		"vdnExcedeIntentosMenuTP":"0",
 		"horarioSemana":"6:00-22:00",
  		"horarioSabado":"6:00-22:00",
  		"habilitarHorarioSabado":"true",
  		"festivosColombia":"1-1,1-10,3-21,4-14,4-15,5-30,6-20,6-27,7-4,7-20,8-15,10-17,11-7,11-14,12-8", 		
-		"listaTipoDocumentosGramatica":"CC:3-10,TI:3-15,CE:1-15,PA:1-15,NIT:10-10,PE:10-10,SC:10-10,Otro:1-20"
+		"listaTipoDocumentosGramatica":"DNI:3-10,CE:1-15,PA:1-15,Otro:1-20"
 	}]
 }

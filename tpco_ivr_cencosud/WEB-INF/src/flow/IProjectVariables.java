@@ -154,6 +154,7 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_URL_CONSULTA_INFO_CLIENT = "urlConsultaInfoClient";
 	public static final String VAR_CONFIGURACION_FIELD_URL_CONSULTA_LOG_IVR = "urlConsultaLogIvr";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_DESACTIVACION_SEGURO = "vdnDesactivacionSeguro";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_EXCEDE_INTENTOS_MENU_TP = "vdnExcedeIntentosMenuTP";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_INFO_PROTECCION = "vdnInfoProteccion";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_REGISTRO_RECLAMO = "vdnRegistroReclamo";
 	public static final String VAR_CONFIGURACION_FIELD_VND_ESTADO_SINIESTRO = "vndEstadoSiniestro";

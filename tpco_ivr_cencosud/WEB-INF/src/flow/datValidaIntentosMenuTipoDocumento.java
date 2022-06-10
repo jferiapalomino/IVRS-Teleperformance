@@ -76,8 +76,9 @@ public class datValidaIntentosMenuTipoDocumento extends com.avaya.sce.runtime.Da
 		actions = null;
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "intentosMenu", com.avaya.sce.runtime.Expression.INT_GREATER_THEN_EQUAL, "varConfiguracion:repeticiones", true).setDebugId(4956)).evaluate(mySession)) {
-			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("datTermina", "Termina").setDebugId(4957));
+			actions = new java.util.ArrayList(2);
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnExcedeIntentosMenuTP", false).setDebugId(5775));
+			actions.add(new com.avaya.sce.runtime.Next("datTransferencia", "Transferencia").setDebugId(4957));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
