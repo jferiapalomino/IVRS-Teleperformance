@@ -8,15 +8,7 @@
                 <Property name="TimeUnit" value="seconds"/>
                 <Property name="BargeIn" value="true"/>
             </Properties>
-            <ChildItems>
-                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
-                    <Properties>
-                        <Property name="Phraseset" value="codFrases"/>
-                        <Property name="Phrase" value="ANU_Bienvenida"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-            </ChildItems>
+            <ChildItems/>
         </PromptLevel>
     </Prompt>
 </PromptDoc>
