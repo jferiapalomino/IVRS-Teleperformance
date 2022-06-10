@@ -36,5 +36,7 @@ public class prmAnuDocumento extends com.avaya.sce.runtime.Prompt {
 		setTimeout(1,8000);
 		setBargin(1,true);
 
+		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.PHRASESET,"codFrases:ANU_Documento",false));
+
 	}
 }

@@ -61,8 +61,8 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 						mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
 						break;
 					case "2":
-						mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("2. Para reportar y/o solicitar información del estado de su siniestro ");
-						Utils.agregarOpcion("Opcion2", "Opción 2 - Para reportar y/o solicitar información del estado de su siniestro ", mySession, "", "", "", "2", "9", "5");
+						mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("2. Para reportar y/o solicitar información del estado de su siniestro");
+						Utils.agregarOpcion("Opcion2", "Opción 2 - Para reportar y/o solicitar información del estado de su siniestro", mySession, "", "", "", "2", "9", "5");
 						mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
 						break;
 					case "3":
