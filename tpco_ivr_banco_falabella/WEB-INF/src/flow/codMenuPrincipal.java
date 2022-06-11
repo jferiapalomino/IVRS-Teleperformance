@@ -162,7 +162,7 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition3", "menPrincipal:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "1", false).setDebugId(5201)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnInfoProteccion", false).setDebugId(5761));
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnInformacionProteccion", false).setDebugId(5761));
 			actions.add(new com.avaya.sce.runtime.Next("datTransferencia", "1").setDebugId(5202));
 			if(evaluateActions(actions, mySession)) {
 				return true;
