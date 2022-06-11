@@ -116,7 +116,7 @@ public class menTipoDocumento extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("DNI o Documento de identidad", "1", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("DNI Documento de identidad", "1", true, "exact", "codMenuTipoDocumento", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice

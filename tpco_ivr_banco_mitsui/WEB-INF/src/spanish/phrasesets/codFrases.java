@@ -29,11 +29,8 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 		//{{START:PHRASESET:STATIC
 
 		// Create the phrase map, then populate with phrases
-		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(10);
+		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(8);
 		com.avaya.sce.runtime.Phrase phrase;
-
-		// phrase: ANU_Transferencia
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_Transferencia", "ANU_Transferencia.wav", ""); 
 
 		// phrase: MEN_Principal
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_Principal", "MEN_Principal.wav", ""); 

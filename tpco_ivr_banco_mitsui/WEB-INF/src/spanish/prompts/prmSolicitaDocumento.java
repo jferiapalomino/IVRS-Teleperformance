@@ -33,7 +33,7 @@ public class prmSolicitaDocumento extends com.avaya.sce.runtime.Prompt {
 		setOrder(com.avaya.sce.runtime.Prompt.STANDARD);
 
 		// Prompt level 1
-		setTimeout(1,8000);
+		setTimeoutVariable(1,"varConfiguracion:timeoutPromptPac");
 		setBargin(1,true);
 
 		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.PHRASESET,"codFrases:PAC_SolicitaDocumento",false));

@@ -40,7 +40,6 @@ public interface IProjectVariables {
 	public static final String VDN_DESBORDE = "vdnDesborde";
 	public static final String VAR_CONFIGURACION = "varConfiguracion";
 	public static final String PAC_DOCUMENTO = "pacDocumento";
-	public static final String MEN_CONFIRMA_DOCUMENTO = "menConfirmaDocumento";
 	public static final String REDIRECTINFO = "redirectinfo";
 	public static final String OPCION_MENU = "opcionMenu";
 	public static final String BLIND_TRANSFER = "BlindTransfer";
@@ -154,7 +153,7 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_URL_CONSULTA_INFO_CLIENT = "urlConsultaInfoClient";
 	public static final String VAR_CONFIGURACION_FIELD_URL_CONSULTA_LOG_IVR = "urlConsultaLogIvr";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_EXCEDE_INTENTOS_MENU_TP = "vdnExcedeIntentosMenuTP";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_INFO_PROTECCION = "vdnInfoProteccion";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_INFORMACION_PROTECCION = "vdnInformacionProteccion";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_REGISTRO_RECLAMO = "vdnRegistroReclamo";
 	public static final String VAR_CONFIGURACION_FIELD_VND_ESTADO_SINIESTRO = "vndEstadoSiniestro";
 	public static final String PAC_DOCUMENTO_FIELD_CONFIDENCE = "confidence";
@@ -164,13 +163,6 @@ public interface IProjectVariables {
 	public static final String PAC_DOCUMENTO_FIELD_NOMATCHCOUNT = "nomatchcount";
 	public static final String PAC_DOCUMENTO_FIELD_UTTERANCE = "utterance";
 	public static final String PAC_DOCUMENTO_FIELD_VALUE = "value";
-	public static final String MEN_CONFIRMA_DOCUMENTO_FIELD_CONFIDENCE = "confidence";
-	public static final String MEN_CONFIRMA_DOCUMENTO_FIELD_INPUTMODE = "inputmode";
-	public static final String MEN_CONFIRMA_DOCUMENTO_FIELD_INTERPRETATION = "interpretation";
-	public static final String MEN_CONFIRMA_DOCUMENTO_FIELD_NOINPUTCOUNT = "noinputcount";
-	public static final String MEN_CONFIRMA_DOCUMENTO_FIELD_NOMATCHCOUNT = "nomatchcount";
-	public static final String MEN_CONFIRMA_DOCUMENTO_FIELD_UTTERANCE = "utterance";
-	public static final String MEN_CONFIRMA_DOCUMENTO_FIELD_VALUE = "value";
 	public static final String REDIRECTINFO_FIELD_PRESENTATIONINFO = "presentationinfo";
 	public static final String REDIRECTINFO_FIELD_REASON = "reason";
 	public static final String REDIRECTINFO_FIELD_SCREENINGINFO = "screeninginfo";

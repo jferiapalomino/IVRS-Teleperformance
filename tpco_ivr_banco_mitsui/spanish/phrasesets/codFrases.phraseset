@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <phraseset audiolocation="external" filename="codFrases" version="1.0">
     <phrase version="1.0">
-        <displayname>ANU_Transferencia</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>ANU_Transferencia.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
         <displayname>MEN_Principal</displayname>
         <talent/>
         <phrasetext/>
