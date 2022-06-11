@@ -36,7 +36,7 @@ public class prmTipoDocumento extends com.avaya.sce.runtime.Prompt {
 		setTimeoutVariable(1,"varConfiguracion:timeoutPromptMenu");
 		setBargin(1,true);
 
-		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.PHRASESET,"codFrases:MEN_Principal",false));
+		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.PHRASESET,"codFrases:MEN_TipoDocumento",false));
 
 	}
 }

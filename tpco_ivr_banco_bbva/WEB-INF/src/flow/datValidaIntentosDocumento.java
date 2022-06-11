@@ -85,7 +85,7 @@ public class datValidaIntentosDocumento extends com.avaya.sce.runtime.Data {
 
 		} else {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("datTermina", "Excede").setDebugId(5001));
+			actions.add(new com.avaya.sce.runtime.Next("datTermina", "Termina").setDebugId(5001));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

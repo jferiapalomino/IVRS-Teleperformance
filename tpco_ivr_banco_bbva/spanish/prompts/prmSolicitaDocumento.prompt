@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <PromptDoc>
-    <Prompt addreply="" audioonly="false" bargeintype="speech" order="standard" version="1.0">
+    <Prompt addreply="false" audioonly="false" bargeintype="speech" order="standard" version="1.0">
         <PromptLevel count="1" valid="true">
             <Properties>
-                <Property name="Timeout_Presentation" value="constant"/>
+                <Property name="Timeout_Presentation" value="variable"/>
                 <Property name="Timeout" value="8"/>
                 <Property name="TimeUnit" value="seconds"/>
+                <Property name="Timeout_Variable" value="varConfiguracion"/>
+                <Property name="Timeout_VarField" value="timeoutPromptPac"/>
                 <Property name="BargeIn" value="true"/>
             </Properties>
-            <ChildItems/>
+            <ChildItems>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="codFrases"/>
+                        <Property name="Phrase" value="MEN_TipoDocumento"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+            </ChildItems>
         </PromptLevel>
     </Prompt>
 </PromptDoc>
