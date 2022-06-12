@@ -151,62 +151,6 @@
     <variable factoryID="" name="intentosPac" owner="" type="" value="0" version="1.0"/>
     <variable factoryID="" name="intentosRepetirDocumento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="intentosRepetirMenu" owner="" type="" value="0" version="1.0"/>
-    <variable factoryID="" name="menConfirmaDocumento:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
     <variable factoryID="" name="menPrincipal:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
@@ -929,10 +873,10 @@
     <variable factoryID="" name="varConfiguracion:urlAudiosTPTools" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:urlConsultaInfoClient" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:urlConsultaLogIvr" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnExcedeIntentosMenuTP" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnInfoProteccion" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnRegistroReclamo" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vndEstadoSiniestro" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP1" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP2" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP3" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuTipoDocumento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:dnisExiste" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:documento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:pais" owner="" type="" value="" version="1.0"/>

@@ -10,7 +10,15 @@
                 <Property name="Timeout_VarField" value="timeoutPromptMenu"/>
                 <Property name="BargeIn" value="true"/>
             </Properties>
-            <ChildItems/>
+            <ChildItems>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="codFrases"/>
+                        <Property name="Phrase" value="MEN_TipoDocumento"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+            </ChildItems>
         </PromptLevel>
     </Prompt>
 </PromptDoc>
