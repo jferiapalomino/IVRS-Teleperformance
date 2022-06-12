@@ -152,11 +152,11 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_URL_AUDIOS_TPTOOLS = "urlAudiosTPTools";
 	public static final String VAR_CONFIGURACION_FIELD_URL_CONSULTA_INFO_CLIENT = "urlConsultaInfoClient";
 	public static final String VAR_CONFIGURACION_FIELD_URL_CONSULTA_LOG_IVR = "urlConsultaLogIvr";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_DESACTIVACION_SEGURO = "vdnDesactivacionSeguro";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_EXCEDE_INTENTOS_MENU_TP = "vdnExcedeIntentosMenuTP";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_INFORMACION_PROTECCION = "vdnInformacionProteccion";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_REGISTRO_RECLAMO = "vdnRegistroReclamo";
-	public static final String VAR_CONFIGURACION_FIELD_VND_ESTADO_SINIESTRO = "vndEstadoSiniestro";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_1 = "vdnMenuPrincipalOP1";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_2 = "vdnMenuPrincipalOP2";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_3 = "vdnMenuPrincipalOP3";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_4 = "vdnMenuPrincipalOP4";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_TIPO_DOCUMENTO = "vdnMenuTipoDocumento";
 	public static final String PAC_DOCUMENTO_FIELD_CONFIDENCE = "confidence";
 	public static final String PAC_DOCUMENTO_FIELD_INPUTMODE = "inputmode";
 	public static final String PAC_DOCUMENTO_FIELD_INTERPRETATION = "interpretation";
