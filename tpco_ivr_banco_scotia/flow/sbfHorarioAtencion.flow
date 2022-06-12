@@ -3,9 +3,9 @@
     <ApplicationFlow nextObjectId="22" package="flow.subflow.sbfHorarioAtencion" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="16" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="414"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="415"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="30"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="26"/>
                 <Property name="Name" value="anuFueraHorario"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="17" version="1.2">
                     <ItemProperties/>
@@ -91,7 +91,7 @@
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="14" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="602"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="31"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="27"/>
                 <Property name="Name" value="retFueraHorario"/>
             </FlowNode>
             <NodeConnection id="8" version="1.2">
