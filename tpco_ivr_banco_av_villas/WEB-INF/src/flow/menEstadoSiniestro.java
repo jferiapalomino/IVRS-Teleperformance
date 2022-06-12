@@ -30,7 +30,7 @@ public class menEstadoSiniestro extends com.avaya.sce.runtime.Menu {
 		// TODO Auto-generated method stub
 		super.requestBegin(mySession);
 		try{		
-			Utils.agregarOpcion("MenúEstadoSiniestro", "Menú Estado Siniestro", mySession, "", "", "", "", "9", "5");
+			Utils.agregarOpcion("MenuEstadoSiniestro", "Menú Estado Siniestro", mySession, "", "", "", "", "9", "5");
 		}catch(Exception ex){
 			CustomTracking.error(mySession, ex.getMessage());
 		}
@@ -109,7 +109,7 @@ public class menEstadoSiniestro extends com.avaya.sce.runtime.Menu {
 		java.util.List list = null;
 		com.avaya.sce.runtime.Choice choice = null;
 		java.util.Collection grammarInfo = null;
-		list = new java.util.ArrayList(1);
+		list = new java.util.ArrayList(2);
 		String ___tempGrammarName = null;
 
 		// build the list of grammar information objects for the choice
@@ -117,6 +117,13 @@ public class menEstadoSiniestro extends com.avaya.sce.runtime.Menu {
 
 
 		choice = new com.avaya.sce.runtime.Choice("Gastos Funerarios", "1", true, "exact", "codMenuEstadoSiniestro", grammarInfo, true);
+		list.add(choice);
+
+		// build the list of grammar information objects for the choice
+		grammarInfo = new java.util.ArrayList();
+
+
+		choice = new com.avaya.sce.runtime.Choice("Permanecer en linea", "2", true, "exact", "codMenuEstadoSiniestro", grammarInfo, true);
 		list.add(choice);
 
 		return(list);

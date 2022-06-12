@@ -194,7 +194,7 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition4", "menPrincipal:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "2", false).setDebugId(5203)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnInfoSeguro", false).setDebugId(5762));
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnInformacionSeguro", false).setDebugId(5762));
 			actions.add(new com.avaya.sce.runtime.Next("datTransferencia", "2").setDebugId(5204));
 			if(evaluateActions(actions, mySession)) {
 				return true;
@@ -230,7 +230,7 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition7", "menPrincipal:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "5", false).setDebugId(5789)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnInfoEcosistema", false).setDebugId(5946));
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnServicioEcosistema", false).setDebugId(5946));
 			actions.add(new com.avaya.sce.runtime.Next("datTransferencia", "5").setDebugId(5792));
 			if(evaluateActions(actions, mySession)) {
 				return true;

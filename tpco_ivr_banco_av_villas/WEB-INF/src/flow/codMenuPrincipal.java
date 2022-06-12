@@ -52,7 +52,7 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 				Utils.agregarOpcion("NoInput", "No ingreso opción - Menu Principal", mySession, "", "", "", "", "9", "5");				
 			}else {
 				if (NoMatch >= 1) {
-					Utils.agregarOpcion("NoMatch", "Opción no validar - Menu Principal", mySession, "", "", "", "", "9", "5");							
+					Utils.agregarOpcion("NoMatch", "Opción no valida - Menu Principal", mySession, "", "", "", "", "9", "5");							
 				}else {	
 					switch (value) {
 					case "1":
@@ -184,7 +184,7 @@ public class codMenuPrincipal extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition4", "menPrincipal:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "2", false).setDebugId(5203)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnInfoSeguro", false).setDebugId(5762));
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnInformacionSeguro", false).setDebugId(5762));
 			actions.add(new com.avaya.sce.runtime.Next("datTransferencia", "2").setDebugId(5204));
 			if(evaluateActions(actions, mySession)) {
 				return true;

@@ -3,15 +3,15 @@
  */
 package spanish.prompts;
 
-public class prmMenuConfirmacion extends com.avaya.sce.runtime.Prompt {
+public class prmMenuFueraHorario extends com.avaya.sce.runtime.Prompt {
 
 	//{{START:CLASS:FIELDS
 	//}}END:CLASS:FIELDS
 
 	/**
-	 * Constructor for prmMenuConfirmacion.
+	 * Constructor for prmMenuServicioExequias.
 	 */
-	public prmMenuConfirmacion() {
+	public prmMenuFueraHorario() {
 		//{{START:CLASS:CONSTRUCTOR
 		super();
 		//}}END:CLASS:CONSTRUCTOR
@@ -29,12 +29,14 @@ public class prmMenuConfirmacion extends com.avaya.sce.runtime.Prompt {
 		com.avaya.sce.runtime.RenderHint hint = null;
 		com.avaya.sce.runtime.MediaPage mediaPage = null;
 		setBarginType(com.avaya.sce.runtimecommon.SCERT.BARGIN_SPEECH);
-		setName("prmMenuConfirmacion");
+		setName("prmMenuFueraHorario");
 		setOrder(com.avaya.sce.runtime.Prompt.STANDARD);
 
 		// Prompt level 1
 		setTimeout(1,8000);
 		setBargin(1,true);
+
+		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.PHRASESET,"codFrases:MEN_FueraHorario",false));
 
 	}
 }

@@ -73,17 +73,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
-			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_CONFIDENCE,
-			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_INPUTMODE,
-			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_INTERPRETATION,
-			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_NOINPUTCOUNT,
-			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_NOMATCHCOUNT,
-			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_UTTERANCE,
-			IProjectVariables.MEN_SERVICIOS_EXEQUIAS_FIELD_VALUE };
-		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.MEN_SERVICIOS_EXEQUIAS, variableFields, null, session, false, false );
-		session.putVariable(variable);
-
-		variableFields = new String[] {
 			IProjectVariables.RESPONSE_CONSULTA_CLIENTE_FIELD_CELULAR,
 			IProjectVariables.RESPONSE_CONSULTA_CLIENTE_FIELD_CIUDAD,
 			IProjectVariables.RESPONSE_CONSULTA_CLIENTE_FIELD_CODIGO_UNICO,
@@ -165,16 +154,17 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_CONSULTA_INFO_CLIENT,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_CONSULTA_LOG_IVR,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_ACTIVIDAD_ECONOMICA,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_ASISTENCIA_HOGAR,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_DESACTIVACION_SEGURO,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_EXCEDE_INTENTOS_MENU_TP,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_GASTOS_FUNERARIOS,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFO_SEGURO,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_OTRA_ASISTENCIA,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_PERMANECE_LINEA,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_QUEJA_RECLAMO,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_SERVICIO_ECOSISTEMA,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_SERVICIO_EXEQUIAS };
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_ESTADO_SINIESTRO_OP_1,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_ESTADO_SINIESTRO_OP_2,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_FUERA_HORARIO,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_1,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_2,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_3,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_4,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFORMACION_SEGURO,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_NO_INGRESA_DOCUMENTO,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_QUEJA_RECLAMO };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.VAR_CONFIGURACION, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
@@ -187,17 +177,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.PAC_DOCUMENTO_FIELD_UTTERANCE,
 			IProjectVariables.PAC_DOCUMENTO_FIELD_VALUE };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.PAC_DOCUMENTO, variableFields, null, session, false, false );
-		session.putVariable(variable);
-
-		variableFields = new String[] {
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_CONFIDENCE,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_INPUTMODE,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_INTERPRETATION,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_NOINPUTCOUNT,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_NOMATCHCOUNT,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_UTTERANCE,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_VALUE };
-		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.MEN_CONFIRMA_DOCUMENTO, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
 		variableFields = new String[] {
@@ -313,6 +292,17 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.FLAG_HORARIO, "", null, session, false, false );
+		session.putVariable(variable);
+
+		variableFields = new String[] {
+			IProjectVariables.MEN_FUERA_HORARIO_FIELD_CONFIDENCE,
+			IProjectVariables.MEN_FUERA_HORARIO_FIELD_INPUTMODE,
+			IProjectVariables.MEN_FUERA_HORARIO_FIELD_INTERPRETATION,
+			IProjectVariables.MEN_FUERA_HORARIO_FIELD_NOINPUTCOUNT,
+			IProjectVariables.MEN_FUERA_HORARIO_FIELD_NOMATCHCOUNT,
+			IProjectVariables.MEN_FUERA_HORARIO_FIELD_UTTERANCE,
+			IProjectVariables.MEN_FUERA_HORARIO_FIELD_VALUE };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.MEN_FUERA_HORARIO, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
 		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.INTENTOS_MENU, "0", null, session, false, false );

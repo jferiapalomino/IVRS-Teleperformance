@@ -645,25 +645,13 @@ Copyright 2004-2011 Avaya Inc.
     </servlet>
     
     
-    <servlet id="SAGE-callflow-servlet_main_5047">
-        <servlet-name>codMenuConfirmaDocumento</servlet-name>
-        <servlet-class>flow.codMenuConfirmaDocumento</servlet-class>
-    </servlet>
-    
-    <servlet id="SAGE-callflow-servlet_main_5064">
-        <servlet-name>menConfirmaDocumento</servlet-name>
-        <servlet-class>flow.menConfirmaDocumento</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_5074">
-        <servlet-name>datValidaIntentosMenuConfirmaDocumento</servlet-name>
-        <servlet-class>flow.datValidaIntentosMenuConfirmaDocumento</servlet-class>
-    </servlet>
     
     
-    <servlet id="SAGE-callflow-servlet_main_5107">
-        <servlet-name>anuDocumento</servlet-name>
-        <servlet-class>flow.anuDocumento</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
     
     
     
@@ -700,10 +688,7 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_5384">
-        <servlet-name>datRepetirDigitarDocumento</servlet-name>
-        <servlet-class>flow.datRepetirDigitarDocumento</servlet-class>
-    </servlet>
+    
     
     
     
@@ -1357,25 +1342,13 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>pacDocumento</servlet-name>
         <url-pattern>/pacDocumento</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5047">
-        <servlet-name>codMenuConfirmaDocumento</servlet-name>
-        <url-pattern>/codMenuConfirmaDocumento</url-pattern>
-    </servlet-mapping>
-    
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5064">
-        <servlet-name>menConfirmaDocumento</servlet-name>
-        <url-pattern>/menConfirmaDocumento</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5074">
-        <servlet-name>datValidaIntentosMenuConfirmaDocumento</servlet-name>
-        <url-pattern>/datValidaIntentosMenuConfirmaDocumento</url-pattern>
-    </servlet-mapping>
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5107">
-        <servlet-name>anuDocumento</servlet-name>
-        <url-pattern>/anuDocumento</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
     
     
     
@@ -1411,10 +1384,7 @@ Copyright 2004-2011 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_5384">
-        <servlet-name>datRepetirDigitarDocumento</servlet-name>
-        <url-pattern>/datRepetirDigitarDocumento</url-pattern>
-    </servlet-mapping>
+    
     
     
     

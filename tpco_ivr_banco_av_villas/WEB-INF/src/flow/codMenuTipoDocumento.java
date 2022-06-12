@@ -52,7 +52,7 @@ public class codMenuTipoDocumento extends com.avaya.sce.runtime.Data {
 				Utils.agregarOpcion("NoInput", "No ingreso opción - Menu Tipo Documento", mySession, "", "", "", "", "9", "5");				
 			}else {
 				if (NoMatch >= 1) {
-					Utils.agregarOpcion("NoMatch", "Opción no validar - Menu Tipo Documento", mySession, "", "", "", "", "9", "5");							
+					Utils.agregarOpcion("NoMatch", "Opción no valida - Menu Tipo Documento", mySession, "", "", "", "", "9", "5");							
 				}else {	
 					switch (value) {
 						case "1":
@@ -170,7 +170,7 @@ public class codMenuTipoDocumento extends com.avaya.sce.runtime.Data {
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition4", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "2", false).setDebugId(5170)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
 			actions.add(new com.avaya.sce.runtime.varoperations.Assign("TipoDocumentoGramatica", "CE", true).setDebugId(5749));
-			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "3").setDebugId(5171));
+			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "2").setDebugId(5171));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
@@ -182,7 +182,7 @@ public class codMenuTipoDocumento extends com.avaya.sce.runtime.Data {
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition5", "menTipoDocumento:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "3", false).setDebugId(5172)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
 			actions.add(new com.avaya.sce.runtime.varoperations.Assign("TipoDocumentoGramatica", "PA", true).setDebugId(5750));
-			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "4").setDebugId(5173));
+			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "3").setDebugId(5173));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

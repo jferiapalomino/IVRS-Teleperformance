@@ -133,8 +133,6 @@ public class graDocumento extends com.avaya.sce.runtime.DynamicGrammar {
 			/**Limpiar variables
 			 * */
 			
-			mySession.getVariableField(IProjectVariables.TIPO_DOCUMENTO_GRAMATICA).setValue("");
-			
 		} catch (Exception e) {
 			
 			CustomTracking.error(mySession,"Hubo un error en asignar la gramatica: "+e);

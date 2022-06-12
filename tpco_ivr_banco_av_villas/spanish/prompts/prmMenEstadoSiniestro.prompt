@@ -4,7 +4,7 @@
         <PromptLevel count="1" valid="true">
             <Properties>
                 <Property name="Timeout_Presentation" value="variable"/>
-                <Property name="Timeout" value="8"/>
+                <Property name="Timeout" value="3"/>
                 <Property name="TimeUnit" value="seconds"/>
                 <Property name="Timeout_Variable" value="varConfiguracion"/>
                 <Property name="Timeout_VarField" value="timeoutPromptMenu"/>

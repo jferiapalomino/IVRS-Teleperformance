@@ -133,10 +133,14 @@ public class codPacDocumento extends com.avaya.sce.runtime.Data {
 			actions = null;
 
 		} else {
-			actions = new java.util.ArrayList(3);
+			actions = new java.util.ArrayList(7);
 			actions.add(new com.avaya.sce.runtime.varoperations.Assign("intentosPac", "0", true).setDebugId(5714));
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("uui", "pacDocumento:utterance", false).setDebugId(5713));
-			actions.add(new com.avaya.sce.runtime.Next("anuDocumento", "Valido").setDebugId(4990));
+			actions.add(new com.avaya.sce.runtime.varoperations.Concatenate("uui", "TipoDoc:", true).setDebugId(5985));
+			actions.add(new com.avaya.sce.runtime.varoperations.Concatenate("uui", "TipoDocumentoGramatica", false).setDebugId(5986));
+			actions.add(new com.avaya.sce.runtime.varoperations.Concatenate("uui", "^", true).setDebugId(5989));
+			actions.add(new com.avaya.sce.runtime.varoperations.Concatenate("uui", "Doc:", true).setDebugId(5987));
+			actions.add(new com.avaya.sce.runtime.varoperations.Concatenate("uui", "pacDocumento:utterance", false).setDebugId(5988));
+			actions.add(new com.avaya.sce.runtime.Next("menPrincipal", "Valido").setDebugId(4990));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

@@ -147,10 +147,10 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_CANCELACION_SEGURO,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_CONTENIDO_HOGAR,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_ESTADO_SINIESTRO,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_EXCEDE_INTENTOS_MENU_TP,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFO_ECOSISTEMA,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFO_SEGURO,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_QUEJA_RECLAMO };
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFORMACION_SEGURO,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_NO_INGRESA_DOCUMENTO,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_QUEJA_RECLAMO,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_SERVICIO_ECOSISTEMA };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.VAR_CONFIGURACION, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
@@ -163,17 +163,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.PAC_DOCUMENTO_FIELD_UTTERANCE,
 			IProjectVariables.PAC_DOCUMENTO_FIELD_VALUE };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.PAC_DOCUMENTO, variableFields, null, session, false, false );
-		session.putVariable(variable);
-
-		variableFields = new String[] {
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_CONFIDENCE,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_INPUTMODE,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_INTERPRETATION,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_NOINPUTCOUNT,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_NOMATCHCOUNT,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_UTTERANCE,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_VALUE };
-		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.MEN_CONFIRMA_DOCUMENTO, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
 		variableFields = new String[] {
