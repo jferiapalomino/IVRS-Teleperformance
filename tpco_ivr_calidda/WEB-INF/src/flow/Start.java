@@ -142,11 +142,11 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_AUDIOS_TPTOOLS,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_CONSULTA_INFO_CLIENT,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_CONSULTA_LOG_IVR,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_DESACTIVACION_SEGURO,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_EXCEDE_INTENTOS_MENU_TP,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFO_PROTECCION,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_REGISTRO_RECLAMO,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VND_ESTADO_SINIESTRO };
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_1,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_2,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_3,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_4,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_TIPO_DOCUMENTO };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.VAR_CONFIGURACION, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
@@ -159,17 +159,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.PAC_DOCUMENTO_FIELD_UTTERANCE,
 			IProjectVariables.PAC_DOCUMENTO_FIELD_VALUE };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.PAC_DOCUMENTO, variableFields, null, session, false, false );
-		session.putVariable(variable);
-
-		variableFields = new String[] {
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_CONFIDENCE,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_INPUTMODE,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_INTERPRETATION,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_NOINPUTCOUNT,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_NOMATCHCOUNT,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_UTTERANCE,
-			IProjectVariables.MEN_CONFIRMA_DOCUMENTO_FIELD_VALUE };
-		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.MEN_CONFIRMA_DOCUMENTO, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
 		variableFields = new String[] {
