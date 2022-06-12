@@ -144,7 +144,7 @@ public class codMenuFueraHorario extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition3", "MenFueraHorario:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "1", false).setDebugId(53)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnServicioExequias", false).setDebugId(54));
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnFueraHorario", false).setDebugId(54));
 			actions.add(new com.avaya.sce.runtime.Next("sbfHorarioAtencion-retTransferencia", "1").setDebugId(55));
 			if(evaluateActions(actions, mySession)) {
 				return true;
