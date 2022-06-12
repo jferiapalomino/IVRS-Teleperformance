@@ -151,62 +151,6 @@
     <variable factoryID="" name="intentosPac" owner="" type="" value="0" version="1.0"/>
     <variable factoryID="" name="intentosRepetirDocumento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="intentosRepetirMenu" owner="" type="" value="0" version="1.0"/>
-    <variable factoryID="" name="menConfirmaDocumento:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="menConfirmaDocumento:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
     <variable factoryID="" name="menEstadoSiniestro:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
@@ -256,6 +200,62 @@
         </editpolicies>
     </variable>
     <variable factoryID="" name="menEstadoSiniestro:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="MenFueraHorario:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="MenFueraHorario:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="MenFueraHorario:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="MenFueraHorario:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="MenFueraHorario:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="MenFueraHorario:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="MenFueraHorario:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -368,62 +368,6 @@
         </editpolicies>
     </variable>
     <variable factoryID="" name="menPrincipal:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="MenServiciosExequias:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="MenServiciosExequias:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="MenServiciosExequias:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="MenServiciosExequias:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="MenServiciosExequias:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="MenServiciosExequias:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
-        <editpolicies>
-            <policy name="opaque" value="true"/>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="MenServiciosExequias:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -1097,14 +1041,16 @@
     <variable factoryID="" name="varConfiguracion:urlAudiosTPTools" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:urlConsultaInfoClient" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:urlConsultaLogIvr" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnActividadEconomica" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnCancelacionSeguro" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnGastosFunerarios" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnInfoSeguro" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnPermaneceLinea" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnQuejaReclamo" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnServicioEcosistema" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnServicioExequias" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuEstadoSiniestroOP1" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuEstadoSiniestroOP2" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuFueraHorario" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuInformacionEcosistemaOP1" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuInformacionEcosistemaOP2" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP1" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP2" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP3" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP8" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnNoIngresaDocumento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:dnisExiste" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:documento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:pais" owner="" type="" value="" version="1.0"/>

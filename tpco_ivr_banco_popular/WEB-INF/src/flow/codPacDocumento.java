@@ -136,7 +136,7 @@ public class codPacDocumento extends com.avaya.sce.runtime.Data {
 			actions = new java.util.ArrayList(3);
 			actions.add(new com.avaya.sce.runtime.varoperations.Assign("intentosPac", "0", true).setDebugId(5714));
 			actions.add(new com.avaya.sce.runtime.varoperations.Assign("uui", "pacDocumento:utterance", false).setDebugId(5713));
-			actions.add(new com.avaya.sce.runtime.Next("anuDocumento", "Valido").setDebugId(4990));
+			actions.add(new com.avaya.sce.runtime.Next("menPrincipal", "Valido").setDebugId(4990));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

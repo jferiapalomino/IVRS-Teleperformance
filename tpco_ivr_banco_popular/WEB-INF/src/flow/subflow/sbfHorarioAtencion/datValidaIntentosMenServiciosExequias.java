@@ -85,7 +85,7 @@ public class datValidaIntentosMenServiciosExequias extends com.avaya.sce.runtime
 
 		} else {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("sbfHorarioAtencion-MenServiciosExequias", "Repetir").setDebugId(84));
+			actions.add(new com.avaya.sce.runtime.Next("sbfHorarioAtencion-MenFueraHorario", "Repetir").setDebugId(84));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

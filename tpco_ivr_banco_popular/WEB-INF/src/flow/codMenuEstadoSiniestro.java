@@ -60,6 +60,11 @@ public class codMenuEstadoSiniestro extends com.avaya.sce.runtime.Data {
 						Utils.agregarOpcion("Opcion1", "Opción 1 - Para solicitar orientación para el pago de gastos funerarios", mySession, "", "", "", "1", "9", "5");
 						mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
 						break;
+					case "2":
+						mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("2. De lo contrario permanezca en linea");
+						Utils.agregarOpcion("Opcion2", "Opción de lo contrario permanezca en linea", mySession, "", "", "", "2", "9", "5");		
+						mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");		
+						break;
 					}
 				}
 			}
@@ -120,7 +125,7 @@ public class codMenuEstadoSiniestro extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "menEstadoSiniestro:noinputcount", com.avaya.sce.runtime.Expression.INT_GREATER_THEN_EQUAL, "1", false).setDebugId(5822)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("datPermaneceLinea", "NoInput").setDebugId(5823));
+			actions.add(new com.avaya.sce.runtime.Next("datValidaIntentosMenuEstadoSiniestro", "NoInput").setDebugId(5823));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
@@ -131,7 +136,7 @@ public class codMenuEstadoSiniestro extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "menEstadoSiniestro:nomatchcount", com.avaya.sce.runtime.Expression.INT_GREATER_THEN_EQUAL, "1", false).setDebugId(5824)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("datPermaneceLinea", "NoMatch").setDebugId(5825));
+			actions.add(new com.avaya.sce.runtime.Next("datValidaIntentosMenuEstadoSiniestro", "NoMatch").setDebugId(5825));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
@@ -142,8 +147,20 @@ public class codMenuEstadoSiniestro extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition3", "menEstadoSiniestro:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "1", false).setDebugId(5826)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnGastosFunerarios", false).setDebugId(5827));
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnMenuEstadoSiniestroOP1", false).setDebugId(5827));
 			actions.add(new com.avaya.sce.runtime.Next("datTransferencia", "1").setDebugId(5828));
+			if(evaluateActions(actions, mySession)) {
+				return true;
+			}
+			actions = null;
+
+		}
+
+
+		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition4", "menEstadoSiniestro:value", com.avaya.sce.runtime.Expression.STRING_EQUAL, "2", false).setDebugId(5953)).evaluate(mySession)) {
+			actions = new java.util.ArrayList(2);
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnMenuEstadoSiniestroOP2", false).setDebugId(5954));
+			actions.add(new com.avaya.sce.runtime.Next("datTransferencia", "2").setDebugId(5955));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

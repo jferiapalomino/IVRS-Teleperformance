@@ -61,33 +61,13 @@ public class codMenuTipoDocumento extends com.avaya.sce.runtime.Data {
 							mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
 							break;
 						case "2":
-							mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("2. Si es tarjeta de identidad");
-							Utils.agregarOpcion("Opcion2", "Opción 2 - Si es tarjeta de identidad", mySession, "", "", "", "2", "9", "5");
+							mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("2. Si es cédula de extranjería");
+							Utils.agregarOpcion("Opcion2", "Opción 2 - Si es cédula de extranjería", mySession, "", "", "", "2", "9", "5");
 							mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
 							break;
 						case "3":
-							mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("3. Si es cédula de extranjería");
-							Utils.agregarOpcion("Opcion3", "Opción 3 - Si es cédula de extranjería", mySession, "", "", "", "3", "9", "5");
-							mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
-							break;
-						case "4":
-							mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("4. Si es pasaporte");
-							Utils.agregarOpcion("Opcion4", "Opción 4 - Si es pasaporte", mySession, "", "", "", "4", "9", "5");
-							mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
-							break;
-						case "5":
-							mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("5. NIT");
-							Utils.agregarOpcion("Opcion5", "Opción 5 - NIT", mySession, "", "", "", "5", "9", "5");
-							mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
-							break;
-						case "6":
-							mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("6. Si es permiso especial");
-							Utils.agregarOpcion("Opcion6", "Opción 6 - Si es permiso especial", mySession, "", "", "", "6", "9", "5");
-							mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
-							break;
-						case "7":
-							mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("7. Si es Salvo conducto de permanencia");
-							Utils.agregarOpcion("Opcion7", "Opción 7 - Si es Salvo conducto de permanencia", mySession, "", "", "", "7", "9", "5");
+							mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("3. Si es pasaporte");
+							Utils.agregarOpcion("Opcion3", "Opción 3 - Si es pasaporte", mySession, "", "", "", "3", "9", "5");
 							mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");
 							break;
 						case "9":
