@@ -142,10 +142,10 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_AUDIOS_TPTOOLS,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_CONSULTA_INFO_CLIENT,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_CONSULTA_LOG_IVR,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_EXCEDE_INTENTOS_MENU_TP,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFORMACION_PROTECCION,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_REGISTRO_RECLAMO,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VND_ESTADO_SINIESTRO };
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_1,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_2,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_3,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_TIPO_DOCUMENTO };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.VAR_CONFIGURACION, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
