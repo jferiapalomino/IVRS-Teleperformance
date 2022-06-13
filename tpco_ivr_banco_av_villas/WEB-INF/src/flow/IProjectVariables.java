@@ -166,8 +166,6 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_URL_AUDIOS_TPTOOLS = "urlAudiosTPTools";
 	public static final String VAR_CONFIGURACION_FIELD_URL_CONSULTA_INFO_CLIENT = "urlConsultaInfoClient";
 	public static final String VAR_CONFIGURACION_FIELD_URL_CONSULTA_LOG_IVR = "urlConsultaLogIvr";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_ACTIVIDAD_ECONOMICA = "vdnActividadEconomica";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_DESACTIVACION_SEGURO = "vdnDesactivacionSeguro";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_ESTADO_SINIESTRO_OP_1 = "vdnEstadoSiniestroOP1";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_ESTADO_SINIESTRO_OP_2 = "vdnEstadoSiniestroOP2";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_FUERA_HORARIO = "vdnFueraHorario";
@@ -175,9 +173,11 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_2 = "vdnInformacionEcosistemaOP2";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_3 = "vdnInformacionEcosistemaOP3";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_4 = "vdnInformacionEcosistemaOP4";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_INFORMACION_SEGURO = "vdnInformacionSeguro";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_NO_INGRESA_DOCUMENTO = "vdnNoIngresaDocumento";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_QUEJA_RECLAMO = "vdnQuejaReclamo";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_1 = "vdnMenuPrincipalOP1";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_2 = "vdnMenuPrincipalOP2";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_3 = "vdnMenuPrincipalOP3";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_8 = "vdnMenuPrincipalOP8";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_TIPO_DOCUMENTO = "vdnMenuTipoDocumento";
 	public static final String PAC_DOCUMENTO_FIELD_CONFIDENCE = "confidence";
 	public static final String PAC_DOCUMENTO_FIELD_INPUTMODE = "inputmode";
 	public static final String PAC_DOCUMENTO_FIELD_INTERPRETATION = "interpretation";

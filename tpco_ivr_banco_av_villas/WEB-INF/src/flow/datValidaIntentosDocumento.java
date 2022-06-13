@@ -77,7 +77,7 @@ public class datValidaIntentosDocumento extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "intentosPac", com.avaya.sce.runtime.Expression.INT_LESS_THAN, "varConfiguracion:intentosSolicitaDocumento", true).setDebugId(4998)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnNoIngresaDocumento", false).setDebugId(5967));
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnMenuTipoDocumento", false).setDebugId(5967));
 			actions.add(new com.avaya.sce.runtime.Next("pacDocumento", "Repetir").setDebugId(4999));
 			if(evaluateActions(actions, mySession)) {
 				return true;

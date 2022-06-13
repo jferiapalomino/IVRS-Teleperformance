@@ -51,7 +51,9 @@ public class codMenuFueraHorario extends com.avaya.sce.runtime.Data {
 
 
 			if(NoInput >= 1) {
-				Utils.agregarOpcion("NoInput", "No ingreso opción - Menú Servicios Exequias", mySession, "", "", "", "", "9", "5");				
+				mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("2. De lo contrario le recordamos que nuestro horario de atención es de 08:30:00 am a 08:00:00 pm");
+				Utils.agregarOpcion("Opcion2", "Opción de lo contrario le recordamos que nuestro horario de atención es de 08:00:00 am a 08:30:00 pm", mySession, "", "", "", "2", "9", "5");		
+				mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");				
 			}else {
 				if (NoMatch >= 1) {
 					Utils.agregarOpcion("NoMatch", "Opción no valida - Menú Servicios Exequias", mySession, "", "", "", "", "9", "5");							

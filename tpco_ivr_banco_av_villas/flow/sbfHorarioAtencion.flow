@@ -94,13 +94,13 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="82" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="796"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="633"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="102"/>
                 <Property name="ReferencedNodeID" value="14"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="67" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="664"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="141"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="562"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="130"/>
                 <Property name="ReferencedNodeID" value="23"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="4" version="3.1">
@@ -194,8 +194,8 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="56" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="308"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="121"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="296"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="115"/>
                 <Property name="Name" value="datValidaIntentosMenFueraHorario"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="57" version="1.2">
                     <ItemProperties/>
@@ -249,13 +249,13 @@
                 <Property name="ReferencedNodeID" value="32"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="14" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="714"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="122"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="594"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="116"/>
                 <Property name="Name" value="retFueraHorario"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="78" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="244"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="140"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="231"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="130"/>
                 <Property name="Name" value="retTransferencia"/>
             </FlowNode>
             <NodeConnection id="8" version="1.2">

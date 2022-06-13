@@ -1045,8 +1045,6 @@
     <variable factoryID="" name="varConfiguracion:urlAudiosTPTools" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:urlConsultaInfoClient" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:urlConsultaLogIvr" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnActividadEconomica" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnDesactivacionSeguro" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnEstadoSiniestroOP1" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnEstadoSiniestroOP2" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnFueraHorario" owner="" type="" value="" version="1.0"/>
@@ -1054,9 +1052,11 @@
     <variable factoryID="" name="varConfiguracion:vdnInformacionEcosistemaOP2" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnInformacionEcosistemaOP3" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnInformacionEcosistemaOP4" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnInformacionSeguro" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnNoIngresaDocumento" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnQuejaReclamo" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP1" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP2" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP3" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP8" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdnMenuTipoDocumento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:dnisExiste" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:documento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:pais" owner="" type="" value="" version="1.0"/>

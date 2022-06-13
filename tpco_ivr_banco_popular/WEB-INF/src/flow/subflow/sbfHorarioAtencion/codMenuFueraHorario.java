@@ -51,7 +51,9 @@ public class codMenuFueraHorario extends com.avaya.sce.runtime.Data {
 
 
 			if(NoInput >= 1) {
-				Utils.agregarOpcion("NoInput", "No ingreso opción - Menú Fuera Horario", mySession, "", "", "", "", "9", "5");				
+				mySession.getVariable(IProjectVariables.OPCION_MENU).getSimpleVariable().setValue("2. De lo contrario le recordamos que nuestro horario de atención es de 08:30:00 am a 08:00:00 pm");
+				Utils.agregarOpcion("Opcion2", "Opción de lo contrario le recordamos que nuestro horario de atención es de 08:00:00 am a 08:30:00 pm", mySession, "", "", "", "2", "9", "5");		
+				mySession.getVariable(IProjectVariables.INTENTOS_MENU).getSimpleVariable().setValue("0");				
 			}else {
 				if (NoMatch >= 1) {
 					Utils.agregarOpcion("NoMatch", "Opción no validar - Menú Fuera Horario", mySession, "", "", "", "", "9", "5");							
@@ -122,7 +124,7 @@ public class codMenuFueraHorario extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "MenFueraHorario:noinputcount", com.avaya.sce.runtime.Expression.INT_GREATER_THEN_EQUAL, "1", false).setDebugId(59)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("sbfHorarioAtencion-datValidaIntentosMenServiciosExequias", "NoInput").setDebugId(60));
+			actions.add(new com.avaya.sce.runtime.Next("sbfHorarioAtencion-retFueraHorario", "NoInput").setDebugId(60));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
