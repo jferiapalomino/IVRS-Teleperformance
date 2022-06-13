@@ -1,7 +1,7 @@
 {
 	"Configuracion":[{
 		"urlConsultaLogIvr":"http://tpcalldataservice.teleperformance.co/v2/api/",
-		"codigoAplicacion":"FALTA",
+		"codigoAplicacion":"2192",
 		"nombreAplicacion":"IVR Financiera OH",
 		"pathUrlAudiosEstandar":"/audios_tpco_ivr_cardiff/Audios/Estandar/",
 		"pathUrlAudiosCliente":"/audios_tpco_ivr_cardiff/Audios/Cliente/FinancieraOH/",
