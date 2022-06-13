@@ -7,6 +7,7 @@ import java.util.Date;
 import com.avaya.sce.runtimecommon.IComplexVariable;
 import com.avaya.sce.runtimecommon.SCESession;
 import com.tp.utils.CustomTracking;
+import com.tp.utils.HolidayUtil;
 import com.tp.utils.Utils;
 
 import flow.IProjectVariables;
@@ -41,109 +42,168 @@ public class codValidaHorario extends com.avaya.sce.runtime.Data {
 	}
 	
 	
-	@SuppressWarnings("deprecation")
 	@Override
 	public void requestBegin(SCESession mySession) {
 		// TODO Auto-generated method stub
 		super.requestBegin(mySession);
-		try {		
+		try {
+
+			IComplexVariable varConfig = mySession.getVariable(IProjectVariables.VAR_CONFIGURACION)
+					.getComplexVariable();
+			boolean sabado = varConfig.getField(IProjectVariables.VAR_CONFIGURACION_FIELD_HABILITAR_HORARIO_SABADO)
+					.getBooleanValue();
+			boolean domingo = varConfig.getField(IProjectVariables.VAR_CONFIGURACION_FIELD_HABILITAR_HORARIO_DOMINGO)
+					.getBooleanValue();
+			boolean festivo = varConfig.getField(IProjectVariables.VAR_CONFIGURACION_FIELD_HABILITAR_HORARIO_FESTIVOS)
+					.getBooleanValue();
+			boolean flagFestivo = false;
 			
-			IComplexVariable varConfig= mySession.getVariable(IProjectVariables.VAR_CONFIGURACION).getComplexVariable();
+			String diasNoTrabajables = varConfig.getField(IProjectVariables.VAR_CONFIGURACION_FIELD_DIAS_NO_TRABAJABLES).getStringValue();
+
+			CustomTracking.debug(mySession, "Validando sabados: " + sabado);
+			CustomTracking.debug(mySession, "Validando domingos: " + domingo);
+			CustomTracking.debug(mySession, "Validando festivos: " + festivo);
+
 			SimpleDateFormat dateFormatHM = new SimpleDateFormat("HH:mm");
 
-			String festivosColombia = mySession.getVariableField(IProjectVariables.VAR_CONFIGURACION,IProjectVariables.VAR_CONFIGURACION_FIELD_FESTIVOS_COLOMBIA).getStringValue();
-			boolean habilitarHorarioSabado = mySession.getVariableField(IProjectVariables.VAR_CONFIGURACION,IProjectVariables.VAR_CONFIGURACION_FIELD_HABILITAR_HORARIO_SABADO).getBooleanValue();
-			
-			Date date = new Date();
-			Calendar calendar = Calendar.getInstance();
-			calendar.setTime(date);
+			CustomTracking.info(mySession, "Validando horarios...");
 
-			String mesActual = ""+(calendar.get(Calendar.MONTH) + 1);
-			String diaMes =  ""+calendar.get(Calendar.DAY_OF_MONTH);
-			
-			boolean flagFestivo = false;
-			String festivos = festivosColombia;
-			
-			String Festivos[] = festivos.split(",");
-			for (String festivo : Festivos) {
-				String mes = festivo.split("-")[0];
-				String dia = festivo.split("-")[1];
-				if(mesActual.equals(mes)){
-					if(diaMes.equals(dia)){
-						flagFestivo = true;
-						mySession.getVariable(IProjectVariables.FLAG_FESTIVO).getSimpleVariable().setValue("1");
-						break;
-					}
-				}
-			}				
-			
-			if (flagFestivo) {
-				mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
-				CustomTracking.debug(mySession, "Fuera de Horario para día festivo: " + diaMes);
-				Utils.agregarOpcion("Fuera horario", "Validacion de horario", mySession, "", "", "", "", "9", "5");		
-				return;
-			}				
-		
-		
+			Calendar calendar = Calendar.getInstance();
 			Calendar rightNow = Calendar.getInstance();
-			
 			String horaMinuto = dateFormatHM.format(rightNow.getTime());
 			Date horaMinLlamada = dateFormatHM.parse(horaMinuto);
+
+			int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
+			int month = calendar.get(Calendar.MONTH);
+			int year = calendar.get(Calendar.YEAR);
+			HolidayUtil holidayUtil = new HolidayUtil(year);
+			flagFestivo = holidayUtil.isHoliday(month, dayOfMonth);
+
+
 			int diaSemana = calendar.get(Calendar.DAY_OF_WEEK);
+			
 			String nombredia = obtenerNombrediaSemana(diaSemana);
 			
+			//Validacion dias no laborables
+			String mesNoTrabajable = ""+(calendar.get(Calendar.MONTH) + 1);
+			String diaNoTrabajable = ""+calendar.get(Calendar.DAY_OF_MONTH);
 			
-			if ((diaSemana >= Calendar.MONDAY) && (diaSemana <= Calendar.FRIDAY)){	
-				String horario = varConfig.getField(IProjectVariables.VAR_CONFIGURACION_FIELD_HORARIO_SEMANA).getStringValue();	
-				CustomTracking.debug(mySession, "Horario para el día "+nombredia+": " + horario);				
-				String horaInicio = horario.split("-")[0];
-				String horaFin = horario.split("-")[1];
-				Date HoraInicio = dateFormatHM.parse(horaInicio);
-				Date HoraFin = dateFormatHM.parse(horaFin);
-				if (horaMinLlamada.equals(HoraInicio) || (horaMinLlamada.after(HoraInicio) && horaMinLlamada.before(HoraFin))) {
-					CustomTracking.info(mySession, "Hora actual: "+horaMinLlamada.getHours()+":"+horaMinLlamada.getMinutes());	
-					mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("1");
-					CustomTracking.info(mySession, "En Horario para el día "+nombredia);			
-					Utils.agregarOpcion("En horario", "Validacion de horario", mySession, "", "", "", "", "9", "5");					
-				} else {
-					CustomTracking.info(mySession, "Hora actual: "+horaMinLlamada.getHours()+":"+horaMinLlamada.getMinutes());
-					mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
-					CustomTracking.info(mySession, "Fuera de Horario para el día "+nombredia);	
-					Utils.agregarOpcion("Fuera horario", "Validacion de horario", mySession, "", "", "", "", "9", "5");							
+			String recorridoDiasNoTrabajable[] = diasNoTrabajables.split(",");
+			for (String recorridoDiaNoTrabaja : recorridoDiasNoTrabajable) {
+				String mes = recorridoDiaNoTrabaja.split("-")[0];
+				String dia = recorridoDiaNoTrabaja.split("-")[1];
+				if(mesNoTrabajable.equals(mes)){
+					if(diaNoTrabajable.equals(dia)){
+						Utils.agregarOpcion("DiaNoTrabajable", "Día no trabajable", mySession, "", "","", "", "9", "5");
+						mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
+						CustomTracking.debug(mySession,"Día no trabajable: " + nombredia);
+						return;
+					}
 				}
-				
-			} else if(diaSemana == Calendar.SATURDAY && habilitarHorarioSabado){	
-				String horarioSabado = varConfig.getField(IProjectVariables.VAR_CONFIGURACION_FIELD_HORARIO_SABADO).getStringValue();	
-				CustomTracking.debug(mySession, "Horario para el día "+nombredia+": " + horarioSabado);				
-				String horaInicio = horarioSabado.split("-")[0];
-				String horaFin = horarioSabado.split("-")[1];
-				Date HoraInicio = dateFormatHM.parse(horaInicio);
-				Date HoraFin = dateFormatHM.parse(horaFin);
-				if (horaMinLlamada.equals(HoraInicio) || (horaMinLlamada.after(HoraInicio) && horaMinLlamada.before(HoraFin))) {
-					CustomTracking.info(mySession, "Hora actual: "+horaMinLlamada.getHours()+":"+horaMinLlamada.getMinutes());
-					mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("1");
-					CustomTracking.info(mySession, "En Horario para el día "+nombredia);		
-					Utils.agregarOpcion("En horario", "Validacion de horario", mySession, "", "", "", "", "9", "5");	
-				} else {
-					CustomTracking.info(mySession, "Hora actual: "+horaMinLlamada.getHours()+":"+horaMinLlamada.getMinutes());
-					mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
-					CustomTracking.info(mySession, "Fuera de Horario para el día "+nombredia);			
-					Utils.agregarOpcion("Fuera horario", "Validacion de horario", mySession, "", "", "", "", "9", "5");				
+			}	
+
+			// Validación festivos
+
+			if (festivo) {
+				if (flagFestivo) {
+					String horarioFestivo = varConfig.getField(IProjectVariables.VAR_CONFIGURACION_FIELD_HORARIO_FESTIVOS).getStringValue();
+					String horaInicioFestivo = horarioFestivo.split("-")[0];
+					String horaFinFestivo = horarioFestivo.split("-")[1];
+					Date dHoraInicioFestivo = dateFormatHM.parse(horaInicioFestivo);
+					Date dHoraFinFestivo = dateFormatHM.parse(horaFinFestivo);
+					if (horaMinLlamada.equals(dHoraInicioFestivo) || (horaMinLlamada.after(dHoraInicioFestivo) && horaMinLlamada.before(dHoraFinFestivo))) {
+						Utils.agregarOpcion("EnHorarioFestivo", "En horario dia festivo", mySession, "", "", "", "","9", "5");
+						mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("1");
+						CustomTracking.debug(mySession,"En horario para el dia festivo: " + calendar.get(Calendar.DAY_OF_WEEK));
+						return;
+					} else {
+						Utils.agregarOpcion("FueraDeHorarioFestivo", "Fuera de horario dia festivo", mySession, "", "","", "", "9", "5");
+						mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
+						CustomTracking.debug(mySession,"Fuera de Horario para dia festivo: " + calendar.get(Calendar.DAY_OF_WEEK));
+						return;
+					}
 				}
-				
-			} else if(diaSemana == Calendar.SUNDAY){
-				CustomTracking.info(mySession, "Hora actual: "+horaMinLlamada.getHours()+":"+horaMinLlamada.getMinutes());
-				mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
-				CustomTracking.info(mySession, "Fuera de Horario para el día "+nombredia);	
-				Utils.agregarOpcion("Fuera horario", "Validacion de horario", mySession, "", "", "", "", "9", "5");	
-			}else {
-				CustomTracking.info(mySession, "Hora actual: "+horaMinLlamada.getHours()+":"+horaMinLlamada.getMinutes());
-				mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
-				CustomTracking.debug(mySession, "Fuera de Horario para el día " + nombredia);
-				Utils.agregarOpcion("Fuera horario", "Validacion de horario", mySession, "", "", "", "", "9", "5");		
+			} else {
+				if (flagFestivo) {
+					Utils.agregarOpcion("FestivoNoLaboral", "Festivo no laboral", mySession, "", "", "", "", "9", "5");
+					mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
+					CustomTracking.debug(mySession,"No se esta validando el horario para el dia festivo: "
+									+ calendar.get(Calendar.DAY_OF_WEEK));
+					return;
+				}
 			}
+
+			// Validación dias de la semana
+			
+			if ((diaSemana >= Calendar.MONDAY) && (diaSemana <= Calendar.FRIDAY)) {
+				String horarioSemana = varConfig.getField(IProjectVariables.VAR_CONFIGURACION_FIELD_HORARIO_SEMANA).getStringValue();
+				String horaInicioSemana = horarioSemana.split("-")[0];
+				String horaFinSemana = horarioSemana.split("-")[1];
+				Date HoraInicioSemana = dateFormatHM.parse(horaInicioSemana);
+				Date HoraFinSemana = dateFormatHM.parse(horaFinSemana);
+				if (horaMinLlamada.equals(HoraInicioSemana) || (horaMinLlamada.after(HoraInicioSemana) && horaMinLlamada.before(HoraFinSemana))) {
+					Utils.agregarOpcion("EnHorarioSemana", "En horario dia "+nombredia, mySession, "", "", "", "", "9","5");
+					mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("1");
+					CustomTracking.debug(mySession,"En Horario dia " + nombredia);
+				} else {
+					Utils.agregarOpcion("FueraDeHorarioSemana", "Fuera de horario dia "+nombredia, mySession, "", "", "","", "9", "5");
+					mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
+					CustomTracking.debug(mySession,"Fuera de Horario dia " + nombredia);
+				}
+				// Validación dias sábados
+			} else if (diaSemana == Calendar.SATURDAY) {
+				if (sabado) {
+					String horarioSabado = varConfig.getField(IProjectVariables.VAR_CONFIGURACION_FIELD_HORARIO_SABADO).getStringValue();
+					String horaInicioSabado = horarioSabado.split("-")[0];
+					String horaFinSabado = horarioSabado.split("-")[1];
+					Date HoraInicioSabado = dateFormatHM.parse(horaInicioSabado);
+					Date HoraFinSabado = dateFormatHM.parse(horaFinSabado);
+					if (horaMinLlamada.equals(HoraInicioSabado) || (horaMinLlamada.after(HoraInicioSabado) && horaMinLlamada.before(HoraFinSabado))) {
+						Utils.agregarOpcion("EnHorarioSabado", "En horario dia sabado", mySession, "", "", "", "", "9","5");
+						mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("1");
+						CustomTracking.debug(mySession,"En Horario dia sabado");
+					} else {
+						Utils.agregarOpcion("FueraDeHorarioSabado", "Fuera de horario dia sabado", mySession, "", "","", "", "9", "5");
+						mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
+						CustomTracking.debug(mySession,"Fuera de Horario dia sabado");
+					}
+				} else {
+					Utils.agregarOpcion("SabadoNoLaboral", "Sabado no laboral", mySession, "", "", "", "", "9", "5");
+					mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
+					CustomTracking.debug(mySession,"No se esta validando el horario para el dia sabado");
+				}
+				// Validación dias domingos
+			} else if (diaSemana == Calendar.SUNDAY) {
+				if (domingo) {
+					String horarioDomingo = varConfig
+							.getField(IProjectVariables.VAR_CONFIGURACION_FIELD_HORARIO_DOMINGO).getStringValue();
+					if (!horarioDomingo.isEmpty()) {
+						String horaInicioDomingo = horarioDomingo.split("-")[0];
+						String horaFinDomingo = horarioDomingo.split("-")[1];
+						Date HoraInicioDomingo = dateFormatHM.parse(horaInicioDomingo);
+						Date HoraFinDomingo = dateFormatHM.parse(horaFinDomingo);
+						if (horaMinLlamada.equals(HoraInicioDomingo) || (horaMinLlamada.after(HoraInicioDomingo) && horaMinLlamada.before(HoraFinDomingo))) {
+							Utils.agregarOpcion("EnHorarioDomingo", "En horario dia domingo", mySession, "", "", "", "","9", "5");
+							mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("1");
+							CustomTracking.debug(mySession,"En Horario dia domingo");
+						} else {
+							Utils.agregarOpcion("FueraDeHorarioDomingo", "Fuera de horario dia domingo", mySession, "","", "", "", "9", "5");
+							mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
+							CustomTracking.debug(mySession,"Fuera de Horario dia domingo");
+						}
+					} else {
+						mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
+						CustomTracking.debug(mySession,"Fuera de Horario dia domingo");
+					}
+				} else {
+					Utils.agregarOpcion("DomingoNoLaboral", "Domingo no laboral", mySession, "", "", "", "", "9", "5");
+					mySession.getVariable(IProjectVariables.FLAG_HORARIO).getSimpleVariable().setValue("0");
+					CustomTracking.debug(mySession,"No se esta validando el horario para el dia domingo");
+				}
+			}
+
 		} catch (Exception e) {
-			CustomTracking.error(mySession,  "Error validando Horario: "+ e.getMessage());
+			CustomTracking.error(mySession,"Error validando Horario: " + e.getMessage());
 		}
 	}
 	
@@ -178,6 +238,29 @@ public class codValidaHorario extends com.avaya.sce.runtime.Data {
 		return nombredia;
 		
 	}
+	
+	
+//	public static void main(String[] args) {
+//
+//		Calendar calendar = Calendar.getInstance();
+//		Calendar rightNow = Calendar.getInstance();
+//		String mesNoTrabajable = ""+(calendar.get(Calendar.MONTH) + 1);
+//		String diaNoTrabajable = ""+(calendar.get(Calendar.MONTH) + 1);
+//		mesNoTrabajable = "12";
+//		diaNoTrabajable = "26";
+//		String diasNoTrabajables = "1-1,12-25";
+//		String recorridoDiasNoTrabajable[] = diasNoTrabajables.split(",");
+//		for (String recorridoDiaNoTrabaja : recorridoDiasNoTrabajable) {
+//			String mes = recorridoDiaNoTrabaja.split("-")[0];
+//			String dia = recorridoDiaNoTrabaja.split("-")[1];
+//			if(mesNoTrabajable.equals(mes)){
+//				if(diaNoTrabajable.equals(dia)){
+//					System.out.println("dia no trabajable");
+//					return;
+//				}
+//			}
+//		}	
+//	}
 	
 	
 	/**
