@@ -133,8 +133,13 @@ public interface IProjectVariables {
 	public static final String MEN_PRINCIPAL_FIELD_UTTERANCE = "utterance";
 	public static final String MEN_PRINCIPAL_FIELD_VALUE = "value";
 	public static final String VAR_CONFIGURACION_FIELD_CODIGO_APLICACION = "codigoAplicacion";
+	public static final String VAR_CONFIGURACION_FIELD_DIAS_NO_TRABAJABLES = "diasNoTrabajables";
 	public static final String VAR_CONFIGURACION_FIELD_FESTIVOS_COLOMBIA = "festivosColombia";
+	public static final String VAR_CONFIGURACION_FIELD_HABILITAR_HORARIO_DOMINGO = "habilitarHorarioDomingo";
+	public static final String VAR_CONFIGURACION_FIELD_HABILITAR_HORARIO_FESTIVOS = "habilitarHorarioFestivos";
 	public static final String VAR_CONFIGURACION_FIELD_HABILITAR_HORARIO_SABADO = "habilitarHorarioSabado";
+	public static final String VAR_CONFIGURACION_FIELD_HORARIO_DOMINGO = "horarioDomingo";
+	public static final String VAR_CONFIGURACION_FIELD_HORARIO_FESTIVOS = "horarioFestivos";
 	public static final String VAR_CONFIGURACION_FIELD_HORARIO_SABADO = "horarioSabado";
 	public static final String VAR_CONFIGURACION_FIELD_HORARIO_SEMANA = "horarioSemana";
 	public static final String VAR_CONFIGURACION_FIELD_INTENTOS_SOLICITA_DOCUMENTO = "intentosSolicitaDocumento";
