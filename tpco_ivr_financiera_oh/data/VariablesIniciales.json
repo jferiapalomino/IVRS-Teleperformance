@@ -12,15 +12,19 @@
   		"intentosSolicitaDocumento":"3",
  		"timeoutPromptPac":"5000",
  		"timeoutPromptMenu":"5000",
- 		"vdnDesactivacionSeguro":"0",
- 		"vdnInfoProteccion":"0",
- 		"vdnRegistroReclamo":"0",
- 		"vndEstadoSiniestro":"0",
- 		"vdnExcedeIntentosMenuTP":"0",
-		"horarioSemana":"6:00-22:00",
- 		"horarioSabado":"6:00-22:00",
+ 		"vdnMenuTipoDocumento":"0",
+ 		"vdnMenuPrincipalOP1":"0",
+ 		"vdnMenuPrincipalOP2":"0",
+ 		"vdnMenuPrincipalOP3":"0",
+ 		"vdnMenuPrincipalOP4":"0",
+		"horarioSemana":"8:00-20:00",
+ 		"horarioSabado":"8:00-12:00",
+ 		"horarioDomingo":"8:00-20:00",
+ 		"horarioFestivos":"8:00-20:00",
  		"habilitarHorarioSabado":"true",
- 		"festivosColombia":"1-1,1-10,3-21,4-14,4-15,5-30,6-20,6-27,7-4,7-20,8-15,10-17,11-7,11-14,12-8", 		
-		"listaTipoDocumentosGramatica":"DNI:3-10,CE:1-15,PA:1-15,Otro:1-20"
+ 		"habilitarHorarioDomingo":"true",
+ 		"habilitarHorarioFestivos":"true",
+ 		"diasNoTrabajables":"1-1,12-25", 		
+		"listaTipoDocumentosGramatica":"DNI:3-10,CE:1-15,PA:1-15,Otro Documento:1-20"
 	}]
 }
