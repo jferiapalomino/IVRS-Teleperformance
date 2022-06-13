@@ -1022,8 +1022,12 @@
     <variable factoryID="" name="UrlAudio" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="uui" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:codigoAplicacion" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:festivosColombia" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:diasNoTrabajables" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:habilitarHorarioDomingo" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:habilitarHorarioFestivos" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:habilitarHorarioSabado" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:horarioDomingo" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:horarioFestivos" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:horarioSabado" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:horarioSemana" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:intentosSolicitaDocumento" owner="" type="" value="" version="1.0"/>
