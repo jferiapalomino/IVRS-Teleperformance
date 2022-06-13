@@ -25,6 +25,6 @@
  		"habilitarHorarioDomingo":"true",
  		"habilitarHorarioFestivos":"true",
  		"diasNoTrabajables":"1-1,12-25", 		
-		"listaTipoDocumentosGramatica":"CC:3-10,CE:1-15,PA:1-15,Otro Documento:1-20"
+		"listaTipoDocumentosGramatica":"DNI:3-10,CE:1-15,PA:1-15,Otro Documento:1-20"
 	}]
 }

@@ -913,7 +913,7 @@
                             <ItemProperties>
                                 <Property name="ActivateDTMF" value="1"/>
                                 <Property name="LinkedNodeID" value="4929"/>
-                                <Property name="Name" value="DNI o Documento de Identidad"/>
+                                <Property name="Name" value="DNI Documento de Identidad"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
