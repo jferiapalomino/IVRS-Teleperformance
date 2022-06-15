@@ -76,8 +76,9 @@ public class datValidaIntentosMenuPrincipal extends com.avaya.sce.runtime.Data {
 		actions = null;
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "intentosMenu", com.avaya.sce.runtime.Expression.INT_GREATER_THEN_EQUAL, "varConfiguracion:repeticiones", true).setDebugId(5248)).evaluate(mySession)) {
-			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("datTermina", "Termina").setDebugId(5249));
+			actions = new java.util.ArrayList(2);
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnMenuPrincipal", false).setDebugId(5990));
+			actions.add(new com.avaya.sce.runtime.Next("datTransferencia", "Transferencia").setDebugId(5249));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

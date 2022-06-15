@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="5989" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="5990" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="9"/>
@@ -1502,7 +1502,7 @@
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="4957" version="1.2">
                                     <ItemProperties>
                                         <Property name="LinkedNodeID" value="4963"/>
-                                        <Property name="Name" value="Transferencia"/>
+                                        <Property name="Name" value="Termina"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -1575,7 +1575,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="5214" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="1582"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="726"/>
-                <Property name="ReferencedNodeID" value="273"/>
+                <Property name="ReferencedNodeID" value="280"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="96" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="187"/>
@@ -1625,7 +1625,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="4963" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="1563"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="416"/>
-                <Property name="ReferencedNodeID" value="280"/>
+                <Property name="ReferencedNodeID" value="273"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="4965" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="1528"/>
@@ -1893,10 +1893,19 @@
                                 <Property name="RightVarOperandID" value="varConfiguracion"/>
                             </ItemProperties>
                             <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="5990" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="sourceFieldId" value="vdnMenuPrincipal"/>
+                                        <Property name="destVarId" value="vdnDesborde"/>
+                                        <Property name="sourceVarId" value="varConfiguracion"/>
+                                        <Property name="type" value="assign"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="5249" version="1.2">
                                     <ItemProperties>
                                         <Property name="LinkedNodeID" value="5214"/>
-                                        <Property name="Name" value="Termina"/>
+                                        <Property name="Name" value="Transferencia"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -1945,7 +1954,7 @@
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="5967" version="1.2">
                                     <ItemProperties>
-                                        <Property name="sourceFieldId" value="vdnMenuTipoDocumento"/>
+                                        <Property name="sourceFieldId" value="vdnMenuPrincipal"/>
                                         <Property name="destVarId" value="vdnDesborde"/>
                                         <Property name="sourceVarId" value="varConfiguracion"/>
                                         <Property name="type" value="assign"/>
@@ -3007,7 +3016,7 @@
                 <TargetNode id="4976"/>
                 <Property name="Connection.SourceObjectID" value="5012"/>
                 <Property name="Connection.TargetObjectID" value="4976"/>
-                <Bendpoint x="343" y="593"/>
+                <Bendpoint x="342" y="584"/>
             </NodeConnection>
             <NodeConnection id="5040" version="1.2">
                 <SourceNode id="4976"/>

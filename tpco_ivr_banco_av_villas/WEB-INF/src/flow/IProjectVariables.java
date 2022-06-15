@@ -173,11 +173,11 @@ public interface IProjectVariables {
 	public static final String VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_2 = "vdnInformacionEcosistemaOP2";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_3 = "vdnInformacionEcosistemaOP3";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_4 = "vdnInformacionEcosistemaOP4";
+	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL = "vdnMenuPrincipal";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_1 = "vdnMenuPrincipalOP1";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_2 = "vdnMenuPrincipalOP2";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_3 = "vdnMenuPrincipalOP3";
 	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_8 = "vdnMenuPrincipalOP8";
-	public static final String VAR_CONFIGURACION_FIELD_VDN_MENU_TIPO_DOCUMENTO = "vdnMenuTipoDocumento";
 	public static final String PAC_DOCUMENTO_FIELD_CONFIDENCE = "confidence";
 	public static final String PAC_DOCUMENTO_FIELD_INPUTMODE = "inputmode";
 	public static final String PAC_DOCUMENTO_FIELD_INTERPRETATION = "interpretation";

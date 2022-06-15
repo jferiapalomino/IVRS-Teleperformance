@@ -164,11 +164,11 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_2,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_3,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_INFORMACION_ECOSISTEMA_OP_4,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_1,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_2,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_3,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_8,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_TIPO_DOCUMENTO };
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_8 };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.VAR_CONFIGURACION, variableFields, null, session, false, false );
 		session.putVariable(variable);
 

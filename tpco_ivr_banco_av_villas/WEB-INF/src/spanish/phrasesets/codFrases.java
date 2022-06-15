@@ -29,11 +29,11 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 		//{{START:PHRASESET:STATIC
 
 		// Create the phrase map, then populate with phrases
-		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(16);
+		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(28);
 		com.avaya.sce.runtime.Phrase phrase;
 
-		// phrase: MEN_Principal
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_Principal", "MEN_Principal.wav", ""); 
+		// phrase: MEN_PrincipalOP1
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP1", "MEN_PrincipalOP1.wav", ""); 
 
 		// phrase: PAC_SolicitaDocumento
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "PAC_SolicitaDocumento", "PAC_SolicitaDocumento.wav", ""); 
@@ -47,14 +47,32 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 		// phrase: MEN_EstadoSiniestro
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_EstadoSiniestro", "MEN_EstadoSiniestro.wav", ""); 
 
-		// phrase: MEN_InformacionEcosistema
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_InformacionEcosistema", "MEN_InformacionEcosistema.wav", ""); 
+		// phrase: MEN_InformacionEcosistemaOP1
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_InformacionEcosistemaOP1", "MEN_InformacionEcosistemaOP1.wav", ""); 
 
 		// phrase: ANU_Bienvenida
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_Bienvenida", "ANU_Bienvenida.wav", ""); 
 
 		// phrase: MEN_FueraHorario
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_FueraHorario", "MEN_FueraHorario.wav", ""); 
+
+		// phrase: MEN_InformacionEcosistemaOP2
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_InformacionEcosistemaOP2", "MEN_InformacionEcosistemaOP2.wav", ""); 
+
+		// phrase: MEN_PrincipalOP2
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP2", "MEN_PrincipalOP2.wav", ""); 
+
+		// phrase: MEN_PrincipalOP3
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP3", "MEN_PrincipalOP3.wav", ""); 
+
+		// phrase: MEN_PrincipalOP4
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP4", "MEN_PrincipalOP4.wav", ""); 
+
+		// phrase: MEN_PrincipalOP5
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP5", "MEN_PrincipalOP5.wav", ""); 
+
+		// phrase: MEN_PrincipalOP9
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP9", "MEN_PrincipalOP9.wav", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}
