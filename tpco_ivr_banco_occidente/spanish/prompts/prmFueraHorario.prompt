@@ -12,7 +12,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="codFrases"/>
-                        <Property name="Phrase" value="ANU_ValidacionHorario"/>
+                        <Property name="Phrase" value="ANU_FueraHorario"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

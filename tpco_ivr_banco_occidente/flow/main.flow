@@ -153,19 +153,10 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseCondition" id="5000" version="1.2">
                             <ItemProperties/>
                             <ChildItems>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="5966" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="sourceFieldId" value="vdnNoIngresaDocumento"/>
-                                        <Property name="destVarId" value="vdnDesborde"/>
-                                        <Property name="sourceVarId" value="varConfiguracion"/>
-                                        <Property name="type" value="assign"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="5001" version="1.2">
                                     <ItemProperties>
                                         <Property name="LinkedNodeID" value="5638"/>
-                                        <Property name="Name" value="Transferencia"/>
+                                        <Property name="Name" value="Termina"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -177,7 +168,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="5638" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="895"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="501"/>
-                <Property name="ReferencedNodeID" value="280"/>
+                <Property name="ReferencedNodeID" value="273"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Bookmark" id="5129" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="2267"/>
@@ -1894,7 +1885,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="5214" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="1593"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="614"/>
-                <Property name="ReferencedNodeID" value="273"/>
+                <Property name="ReferencedNodeID" value="280"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="96" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="187"/>
@@ -2313,10 +2304,19 @@
                                 <Property name="RightVarOperandID" value="varConfiguracion"/>
                             </ItemProperties>
                             <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="5966" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="sourceFieldId" value="vdnMenuPrincipal"/>
+                                        <Property name="destVarId" value="vdnDesborde"/>
+                                        <Property name="sourceVarId" value="varConfiguracion"/>
+                                        <Property name="type" value="assign"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="5249" version="1.2">
                                     <ItemProperties>
                                         <Property name="LinkedNodeID" value="5214"/>
-                                        <Property name="Name" value="Termina"/>
+                                        <Property name="Name" value="Transferencia"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>

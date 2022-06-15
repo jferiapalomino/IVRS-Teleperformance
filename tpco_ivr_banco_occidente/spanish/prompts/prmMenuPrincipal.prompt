@@ -14,7 +14,49 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="codFrases"/>
-                        <Property name="Phrase" value="MEN_Principal"/>
+                        <Property name="Phrase" value="MEN_PrincipalOP2"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="codFrases"/>
+                        <Property name="Phrase" value="MEN_PrincipalOP3"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="codFrases"/>
+                        <Property name="Phrase" value="MEN_PrincipalOP4"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="codFrases"/>
+                        <Property name="Phrase" value="MEN_PrincipalOP5"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="codFrases"/>
+                        <Property name="Phrase" value="MEN_PrincipalOP6"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="codFrases"/>
+                        <Property name="Phrase" value="MEN_PrincipalOP7"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="codFrases"/>
+                        <Property name="Phrase" value="MEN_PrincipalOP9"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
