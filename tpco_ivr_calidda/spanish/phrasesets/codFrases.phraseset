@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <phraseset audiolocation="external" filename="codFrases" version="1.0">
     <phrase version="1.0">
-        <displayname>MEN_Principal</displayname>
+        <displayname>MEN_PrincipalOP1</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>MEN_Principal.wav</audiofile>
+        <audiofile>MEN_PrincipalOP1.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>ANU_ValidacionHorario</displayname>
+        <displayname>ANU_FueraHorario</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>ANU_ValidacionHorario.wav</audiofile>
+        <audiofile>ANU_FueraHorario.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>MEN_TipoDocumento</displayname>
@@ -35,5 +35,32 @@
         <searchkeywords/>
         <comments/>
         <audiofile>PAC_SolicitaDocumento.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_PrincipalOP2</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_PrincipalOP2.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_PrincipalOP3</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_PrincipalOP3.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_PrincipalOP9</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_PrincipalOP9.wav</audiofile>
     </phrase>
 </phraseset>

@@ -10,7 +10,7 @@
                         <property name="iconlg" value="icons/defaultapplicationlg.gif" version="1.0"/>
                         <property name="logpropertiesupdated" value="3.0.17x2" version="1.0"/>
                         <property name="iconsm" value="icons/defaultapplicationsm.gif" version="1.0"/>
-                        <property name="name" value="tpco_ivr_banco_falabella" version="1.0"/>
+                        <property name="name" value="tpco_ivr_financiera_oh" version="1.0"/>
                         <property name="dtmfVarsEnabled" value="false" version="1.0"/>
                         <property name="version" value="1.0.0" version="1.0"/>
                     </propertymap>

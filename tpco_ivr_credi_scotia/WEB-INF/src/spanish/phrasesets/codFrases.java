@@ -32,17 +32,11 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(14);
 		com.avaya.sce.runtime.Phrase phrase;
 
-		// phrase: ANU_Transferencia
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_Transferencia", "ANU_Transferencia.wav", ""); 
+		// phrase: MEN_PrincipalOP1
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP1", "MEN_PrincipalOP1.wav", ""); 
 
-		// phrase: MEN_ConfirmarCodigoUnico
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_ConfirmarCodigoUnico", "MEN_ConfirmarCodigoUnico.wav", ""); 
-
-		// phrase: MEN_Principal
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_Principal", "MEN_Principal.wav", ""); 
-
-		// phrase: ANU_ValidacionHorario
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_ValidacionHorario", "ANU_ValidacionHorario.wav", ""); 
+		// phrase: ANU_FueraHorario
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_FueraHorario", "ANU_FueraHorario.wav", ""); 
 
 		// phrase: MEN_TipoDocumento
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_TipoDocumento", "MEN_TipoDocumento.wav", ""); 
@@ -50,8 +44,14 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 		// phrase: PAC_SolicitaDocumento
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "PAC_SolicitaDocumento", "PAC_SolicitaDocumento.wav", ""); 
 
-		// phrase: ANU_Documento
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_Documento", "ANU_Documento.wav", ""); 
+		// phrase: MEN_PrincipalOP2
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP2", "MEN_PrincipalOP2.wav", ""); 
+
+		// phrase: MEN_PrincipalOP3
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP3", "MEN_PrincipalOP3.wav", ""); 
+
+		// phrase: MEN_PrincipalOP9
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP9", "MEN_PrincipalOP9.wav", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}

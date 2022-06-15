@@ -10,13 +10,13 @@
         <audiofile>MEN_Principal.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>ANU_ValidacionHorario</displayname>
+        <displayname>ANU_FueraHorario</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>ANU_ValidacionHorario.wav</audiofile>
+        <audiofile>ANU_FueraHorario.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>MEN_TipoDocumento</displayname>

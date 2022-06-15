@@ -35,8 +35,8 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 		// phrase: MEN_Principal
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_Principal", "MEN_Principal.wav", ""); 
 
-		// phrase: ANU_ValidacionHorario
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_ValidacionHorario", "ANU_ValidacionHorario.wav", ""); 
+		// phrase: ANU_FueraHorario
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_FueraHorario", "ANU_FueraHorario.wav", ""); 
 
 		// phrase: MEN_TipoDocumento
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_TipoDocumento", "MEN_TipoDocumento.wav", ""); 

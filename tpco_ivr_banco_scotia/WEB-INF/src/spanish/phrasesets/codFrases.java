@@ -29,20 +29,29 @@ public class codFrases extends com.avaya.sce.runtime.Phraseset {
 		//{{START:PHRASESET:STATIC
 
 		// Create the phrase map, then populate with phrases
-		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(8);
+		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(14);
 		com.avaya.sce.runtime.Phrase phrase;
 
-		// phrase: MEN_Principal
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_Principal", "MEN_Principal.wav", ""); 
+		// phrase: MEN_PrincipalOP1
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP1", "MEN_PrincipalOP1.wav", ""); 
 
-		// phrase: ANU_ValidacionHorario
-		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_ValidacionHorario", "ANU_ValidacionHorario.wav", ""); 
+		// phrase: ANU_FueraHorario
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "ANU_FueraHorario", "ANU_FueraHorario.wav", ""); 
 
 		// phrase: PAC_SolicitaDocumento
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "PAC_SolicitaDocumento", "PAC_SolicitaDocumento.wav", ""); 
 
 		// phrase: MEN_TipoDocumento
 		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_TipoDocumento", "MEN_TipoDocumento.wav", ""); 
+
+		// phrase: MEN_PrincipalOP2
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP2", "MEN_PrincipalOP2.wav", ""); 
+
+		// phrase: MEN_PrincipalOP3
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP3", "MEN_PrincipalOP3.wav", ""); 
+
+		// phrase: MEN_PrincipalOP9
+		com.avaya.sce.runtime.Phraseset.addExternalPhrase(PHRASE_MAP, "spanish.phraseset.codFrases.urlbase", "MEN_PrincipalOP9", "MEN_PrincipalOP9.wav", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}
