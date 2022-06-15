@@ -1046,6 +1046,7 @@
     <variable factoryID="" name="varConfiguracion:urlAudiosTPTools" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:urlConsultaInfoClient" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:urlConsultaLogIvr" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="varConfiguracion:vdMenuPrincipal" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnMenuEstadoSiniestroOP1" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnMenuEstadoSiniestroOP2" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnMenuFueraHorario" owner="" type="" value="" version="1.0"/>
@@ -1055,7 +1056,6 @@
     <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP2" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP3" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="varConfiguracion:vdnMenuPrincipalOP8" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="varConfiguracion:vdnNoIngresaDocumento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:dnisExiste" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:documento" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="variablesValidar:pais" owner="" type="" value="" version="1.0"/>

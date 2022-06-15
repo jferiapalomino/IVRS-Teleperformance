@@ -84,9 +84,8 @@ public class datValidaIntentosDocumento extends com.avaya.sce.runtime.Data {
 			actions = null;
 
 		} else {
-			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("vdnDesborde", "varConfiguracion:vdnNoIngresaDocumento", false).setDebugId(5948));
-			actions.add(new com.avaya.sce.runtime.Next("datTransferencia", "Transferencia").setDebugId(5001));
+			actions = new java.util.ArrayList(1);
+			actions.add(new com.avaya.sce.runtime.Next("datTransferencia", "Termina").setDebugId(5001));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

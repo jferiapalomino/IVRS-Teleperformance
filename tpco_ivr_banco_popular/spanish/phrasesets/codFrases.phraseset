@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <phraseset audiolocation="external" filename="codFrases" version="1.0">
     <phrase version="1.0">
-        <displayname>MEN_Principal</displayname>
+        <displayname>MEN_PrincipalOP2</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>MEN_Principal.wav</audiofile>
+        <audiofile>MEN_PrincipalOP2.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>PAC_SolicitaDocumento</displayname>
@@ -46,13 +46,13 @@
         <audiofile>MEN_EstadoSiniestro.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>MEN_InformacionEcosistema</displayname>
+        <displayname>MEN_InformacionEcosistemaOP1</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>MEN_InformacionEcosistema.wav</audiofile>
+        <audiofile>MEN_InformacionEcosistemaOP1.wav</audiofile>
     </phrase>
     <phrase version="1.0">
         <displayname>ANU_Bienvenida</displayname>
@@ -71,5 +71,50 @@
         <searchkeywords/>
         <comments/>
         <audiofile>MEN_FueraHorario.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_InformacionEcosistemaOP2</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_InformacionEcosistemaOP2.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_PrincipalOP3</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_PrincipalOP3.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_PrincipalOP4</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_PrincipalOP4.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_PrincipalOP5</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_PrincipalOP5.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MEN_PrincipalOP9</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MEN_PrincipalOP9.wav</audiofile>
     </phrase>
 </phraseset>

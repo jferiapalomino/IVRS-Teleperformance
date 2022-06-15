@@ -14,7 +14,14 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="codFrases"/>
-                        <Property name="Phrase" value="MEN_InformacionEcosistema"/>
+                        <Property name="Phrase" value="MEN_InformacionEcosistemaOP1"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="codFrases"/>
+                        <Property name="Phrase" value="MEN_InformacionEcosistemaOP2"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

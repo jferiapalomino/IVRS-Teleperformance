@@ -158,6 +158,7 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_AUDIOS_TPTOOLS,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_CONSULTA_INFO_CLIENT,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_URL_CONSULTA_LOG_IVR,
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VD_MENU_PRINCIPAL,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_ESTADO_SINIESTRO_OP_1,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_ESTADO_SINIESTRO_OP_2,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_FUERA_HORARIO,
@@ -166,8 +167,7 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_1,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_2,
 			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_3,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_8,
-			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_NO_INGRESA_DOCUMENTO };
+			IProjectVariables.VAR_CONFIGURACION_FIELD_VDN_MENU_PRINCIPAL_OP_8 };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.VAR_CONFIGURACION, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
